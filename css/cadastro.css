@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Poppins",sans-serif;
+}
+.cabecalho{
+    width: 100%;
+    height: 75px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 10px 40px;
+
+}
+.cabecalho span{
+
+    color: #ff5892;
+}
+.cabecalho h1{
+    color:#000;
+}
+.navegacao{
+    display: flex;
+    width: max-content;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+
+}
+.menu{
+    list-style:none;
+    display: flex;
+    gap: 10px;
+}
+
+.menu .link{
+    border: 2px solid #d87093;
+    border-radius: 5px;
+    padding: 5px;
+    text-decoration: none;
+    color: #000;
+
+}
+.menu .link:hover{
+    background-color: palevioletred;
+    color: #fff;
+}
+
+    main {
+        font-family: "Poppins",sans-serif;
+        /* Ajustado de 500px para 50px */
+        width: 100%;
+        height: calc(100vh - 75px);
+        align-items: center;
+        justify-content: center;
+        display: grid;
+       
+    }
+
+    main h1 {
+        margin-bottom: 12px;
+        margin-top: 10px;
+        font-size: 30px;
+        text-align: center;
+    }
+    
+
+
+
+    .item {
+        background-color: #fff;
+        padding: 5px;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        font-size: 14px;
+    }
+    
+    .item label {
+        margin-bottom: 5px;
+        font-weight: bold;
+        color: #333;
+    }
+    
+    .item input {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 14px;
+    }
+    
+    
+    
+    
+    
+    input[type="password"],
+    input[type="date"],
+    input[type="number"],
+    input[type="email"],
+    input[type="text"]{
+        border: 2px solid palevioletred ;
+        border-radius: 5px;
+        height: 50px;
+        padding: 10px;
+    }
+    
+    
+    .acessar{
+        border: 2px solid #d87093;
+        background-color: palevioletred;
+        color: #fff;
+        border-radius: 5px;
+        padding: 5px;
+        text-decoration: none;;
+        width: 400px;
+        height: 40px;
+        margin-top: 10px; /* Ajustado para mais espaço acima */
+        font-weight: 500;
+        font-size: medium;
+    }
+    
+    .acessar:hover {
+        background-color:white ;
+        color: black;
+        
+    }
+    footer {
+        font-family: "Open-Sans", sans-serif;
+        font-weight: 500;
+        width: 100%;
+        height: 20vh;
+        padding: 3px 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 28px;
+        
+      }
+    
+    
+    
+    
+    
+    
+    
+   
+      
