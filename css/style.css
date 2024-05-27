@@ -111,6 +111,9 @@ main{
 .btn-cadastrar:hover{
     background-color: #d87093;
 }
+.btn-cadastrar a:hover{
+    color: white;
+}
 
 
 
