@@ -1,22 +1,2 @@
-.redes ul li{
-    list-style: none;
-    margin: 10px;
-    height: 70px;
-    width: 70px;
-    background-color: #d87093;
-    border-radius: 40px;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    font-size: 30px;
-}
-.redes ul li:hover{
-    background-color: #f5f5f5;
-}
-.redes ul li a{
-    color: #d87093;
-    text-decoration: none;
-}
+
 
