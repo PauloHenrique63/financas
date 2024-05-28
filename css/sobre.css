@@ -2,6 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+
 * {
     margin: 0;
     padding: 0;
@@ -64,7 +65,7 @@ body {
     font-family: "Poppins",sans-serif;
     width: 100%;
     height: 80px;
-    border: #000 solid 1px;
+   
     justify-content: center;
     align-items: center;
     font-size: medium;
@@ -77,11 +78,14 @@ main {
     font-family: "Poppins",sans-serif;
     /* Ajustado de 500px para 50px */
     width: 100%;
-    height: calc(100vh - 75px - 80px );
+    height: auto;
     
     display: grid; 
     margin-top: 10px;
-    border: #000 solid 1px;
+    
+    align-items: center;
+    justify-content: center;
+    
    
 
 }
@@ -94,22 +98,101 @@ main {
     font-size: 20px;
     font-weight: lighter;
 }
-.img1 img {
-    width:450px;
+main img {
+    width:400px;
+    margin-top: 20px;
+    
+    
+
 }
-.container{
-    column-gap: 15%;
-    margin-top: 30px;
+.conteudo-1{
+    margin-top: 60px;
+    width: 100%;
+    height: auto;
+    
     display: flex;
     flex-direction: row-reverse;
-
+    
+    
 
 }
-.container p{
-    padding: 30px;
-    
-    width: 40%;
-    text-align: left;
-    
+.conteudo-1 img{
+    margin-right: 70px;
+}
+.conteudo-2{
+    width: 100%;
+    height: auto;
+   
+    display: flex;
+    padding: 20px;
+    gap: 15px;
     
 }
+.conteudo-2 img{
+    margin-left:60px;
+}
+
+main p{
+    font-size: 16px;
+    line-height: 1.5;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 100px;
+    align-items: center; 
+}
+footer{
+   
+    font-family: "Open-Sans", sans-serif;
+        font-weight: 500;
+        width: 100%;
+        height: auto;
+        padding: 1px 1px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 30px;
+}
+footer  span{
+    color: #ff5892;
+
+}
+
+.redes{
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.redes ul{
+    display: flex;
+    gap: 30px;
+    list-style: none;
+   
+}
+.redes ul li{
+    list-style: none;
+    margin: 10px;
+    height: 60px;
+    width: 60px;
+    background-color: #d87093;
+    border-radius: 40px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 30px;
+}
+.redes ul li:hover{
+    background-color: #f5f5f5;
+    
+}
+.redes ul li I:hover{
+    color: #d87093;
+}
+.redes ul i{
+    color: white;
+}
+.
