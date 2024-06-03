@@ -58,7 +58,7 @@ body{
         font-family: "Poppins",sans-serif;
         /* Ajustado de 500px para 50px */
         width: 100%;
-        height: calc(120vh - 75px);
+        height: auto;
         align-items: center;
         justify-content: center;
         display: grid;
@@ -105,6 +105,7 @@ body{
     input[type="number"],
     input[type="email"],
     input[type="text"]{
+        font-family:"Poppins";
         border: 2px solid palevioletred ;
         border-radius: 5px;
         height: 50px;
@@ -127,8 +128,8 @@ body{
     }
     
     .acessar:hover {
-        background-color:white ;
-        color: black;
+        background-color:#cf225f ;
+        color: white;
         
     }
     footer {
