@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login</title>
-    <link rel="stylesheet" href="/css/login.css" />
+    <link rel="stylesheet" href="../css/login.css" />
+    <script src="../js/login.js" defer></script>
   </head>
   <body>
     <header class="cabecalho">
@@ -12,17 +13,17 @@
       <nav class="navegacao">
         <ul class="menu">
           <li>
-            <a href="/index.html" class="link link-home">Home</a>
+            <a href="../index.html" class="link link-home">Home</a>
           </li>
           <li>
-            <a href="/html/sobre.html" class="link link-sobrenos">Sobre nós</a>
+            <a href="sobre.html" class="link link-sobrenos">Sobre nós</a>
           </li>
         </ul>
       </nav>
     </header>
     <main class="pagina">
       <div class="login">
-        <img src="/img/login.svg" alt="mulher" />
+        <img src="../img/login.svg" alt="mulher" />
       </div>
       <div class="conteudo">
         <div class="caixa">
@@ -35,6 +36,8 @@
               name="email"
               type="email"
               placeholder="Digite seu email..."
+              minlength="4"
+              required
             />
             <label for="senha">Senha :</label>
             <input
@@ -43,6 +46,7 @@
               name="senha"
               type="password"
               placeholder="Digite sua senha..."
+              required
             />
           </div>
           <div class="suporte">
@@ -51,7 +55,7 @@
             <a href="#">Esqueci minha senha</a>
           </div>
         </div>
-        <button class="acessar">Continuar</button>
+        <button id="acessar" class="acessar">Continuar</button>
       </div>
     </main>
     <footer>

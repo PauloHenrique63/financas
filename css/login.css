@@ -101,9 +101,9 @@ input[type="password"]{
     text-decoration: none;;
     width: 400px;
     height: 40px;
-    margin-top: 10px; /* Ajustado para mais espaço acima */
+    margin-top: 10px; 
     font-weight: 500;
-    font-size: medium;
+    font-size: medium;*/
 }
 
 .acessar:hover {
