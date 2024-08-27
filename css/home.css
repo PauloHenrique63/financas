@@ -163,10 +163,14 @@ main {
 }
 
 
-main span {
+main h1 {
+    transition: transform 0.3s ease;
+    margin-left: 0;
+}
+main h1 span{
     color: #ff5892;
 }
- main h1 {
-    color: #000;
-    
+
+main h1.move-title {
+    transform: translateX(150px); /* Ajuste esse valor conforme necessário */
 }
