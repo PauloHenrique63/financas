@@ -16,7 +16,7 @@ body {
     padding: 10px 40px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+   justify-content: space-between;
     background-color: #fff;
 }
 
@@ -26,4 +26,27 @@ body {
 
 .cabecalho h1 {
     color: #000;
+    
 }
+.nav-list{
+    display: flex;
+    align-items: center;
+}
+.nav-list ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.nav-item{
+    margin:  0 15px;
+}
+
+.nav-link{
+    text-decoration:none ;
+    font-size: 1.15rem;
+    color: #ff5892;
+    font-weight: 400;
+
+}
+
