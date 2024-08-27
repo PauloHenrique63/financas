@@ -8,3 +8,4 @@ document.getElementById("logout_btn").onclick = function () {
     window.location.href = "/index.html";
 };
 
+

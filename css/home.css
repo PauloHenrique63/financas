@@ -164,7 +164,7 @@ main {
 
 
 main h1 {
-    transition: transform 0.3s ease;
+    transition: transform 0.6s cubic-bezier(0.25, 0.8, 0.25, 1);
     margin-left: 0;
 }
 main h1 span{
@@ -174,3 +174,4 @@ main h1 span{
 main h1.move-title {
     transform: translateX(150px); /* Ajuste esse valor conforme necessário */
 }
+
