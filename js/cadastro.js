@@ -3,4 +3,3 @@ document.getElementById("acessar").onclick = function() {
 };
 
 
-document.getElementById

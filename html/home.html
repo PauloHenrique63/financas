@@ -8,21 +8,63 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
     />
+
     <title>home</title>
   </head>
   <body>
-    <header class="cabecalho">
-      <div class="hamburguer">
-        <i class="fa-solid fa-bars fa-2x" style="color: #ff5892"></i>
-      </div>
-      <h1><span>Her</span>Finance</h1>
-      <i class="fa-solid fa-circle-user fa-2x" style="color: #ff5892"></i>
-      <div class="nav-list">
-        <ul>
-          <li class="nav-item"><a href="#" class="nav-link">Cursos</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">Inicio</a></li>
+    <nav id="sidebar">
+      <div id="sidebar_content">
+        <div id="user">
+          <img src="../img/avatar (2).jpg" id="user_avatar" alt="Avatar" />
+
+          <p id="user_infos">
+            <span class="item-description"> Rayssa </span>
+            <span class="item-description"> Advogada </span>
+          </p>
+        </div>
+
+        <ul id="side_items">
+          <li class="side-item">
+            <a href="#">
+              <i class="fa-solid fa-chart-line"></i>
+              <span class="item-description"> Dashboard </span>
+            </a>
+          </li>
+
+          <li class="side-item">
+            <a href="#">
+              <i class="fa-solid fa-book"></i>
+              <span class="item-description"> Cursos </span>
+            </a>
+          </li>
+
+          <li class="side-item">
+            <a href="#">
+              <i class="fa-solid fa-gear"></i>
+              <span class="item-description"> Configurações </span>
+            </a>
+          </li>
         </ul>
+
+        <button id="open_btn">
+          <i id="open_btn_icon" class="fa-solid fa-chevron-right"></i>
+        </button>
       </div>
-    </header>
+
+      <div id="logout">
+        <button id="logout_btn">
+          <i
+            class="fa-solid fa-right-from-bracket fa-lg"
+            style="color: #ff5892"
+          ></i>
+          <span class="item-description"> Logout </span>
+        </button>
+      </div>
+    </nav>
+
+    <main>
+      <h1><span>Her</span>Finance</h1>
+    </main>
+    <script src="../js/home.js"></script>
   </body>
 </html>
