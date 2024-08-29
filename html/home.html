@@ -1,67 +1,81 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/home.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>home</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="../css/home.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+  <body>
+    <nav id="sidebar">
+      <div id="sidebar_content">
+        <div id="user">
+          <img src="../img/avatar (2).jpg" id="user_avatar" alt="Avatar" />
 
-  <title>home</title>
-</head>
+          <p id="user_infos">
+            <span class="item-description"> Rayssa </span>
+            <span class="item-description"> Advogada </span>
+          </p>
+        </div>
 
-<body>
-  <nav id="sidebar">
-    <div id="sidebar_content">
-      <div id="user">
-        <img src="../img/avatar (2).jpg" id="user_avatar" alt="Avatar" />
+        <ul id="side_items">
+          <li class="side-item">
+            <a href="#">
+              <i class="fa-solid fa-chart-line"></i>
+              <span class="item-description"> Dashboard </span>
+            </a>
+          </li>
 
-        <p id="user_infos">
-          <span class="item-description"> Rayssa </span>
-          <span class="item-description"> Advogada </span>
-        </p>
+          <li class="side-item">
+            <a href="#">
+              <i class="fa-solid fa-book"></i>
+              <span class="item-description"> Cursos </span>
+            </a>
+          </li>
+
+          <li class="side-item">
+            <a href="#">
+              <i class="fa-solid fa-gear"></i>
+              <span class="item-description"> Configurações </span>
+            </a>
+          </li>
+        </ul>
+
+        <button id="open_btn">
+          <i id="open_btn_icon" class="fa-solid fa-chevron-right"></i>
+        </button>
       </div>
 
-      <ul id="side_items">
-        <li class="side-item">
-          <a href="#">
-            <i class="fa-solid fa-chart-line"></i>
-            <span class="item-description"> Dashboard </span>
-          </a>
-        </li>
+      <div id="logout">
+        <button id="logout_btn">
+          <i
+            class="fa-solid fa-right-from-bracket fa-lg"
+            style="color: #ff5892"
+          ></i>
+          <span class="item-description"> Logout </span>
+        </button>
+      </div>
+    </nav>
 
-        <li class="side-item">
-          <a href="#">
-            <i class="fa-solid fa-book"></i>
-            <span class="item-description"> Cursos </span>
-          </a>
-        </li>
-
-        <li class="side-item">
-          <a href="#">
-            <i class="fa-solid fa-gear"></i>
-            <span class="item-description"> Configurações </span>
-          </a>
-        </li>
-      </ul>
-
-      <button id="open_btn">
-        <i id="open_btn_icon" class="fa-solid fa-chevron-right"></i>
-      </button>
+    <div class="pagina">
+      <div class="cabecalho">
+        <h1><span>Her</span>Finance</h1>
+      </div>
+      <div class="content">
+        <div class="graficos">
+          <div class="card"><canvas id="mainChart"></canvas></div>
+          <div class="card"><canvas id="lineChart"></canvas></div>
+        </div>
+      </div>
     </div>
 
-    <div id="logout">
-      <button id="logout_btn">
-        <i class="fa-solid fa-right-from-bracket fa-lg" style="color: #ff5892"></i>
-        <span class="item-description"> Logout </span>
-      </button>
-    </div>
-  </nav>
-
-  <main>
-    <h1><span>Her</span>Finance</h1>
-  </main>
-  <script src="../js/home.js"></script>
-</body>
-
+    <script src="../js/graficos.js"></script>
+    <script src="../js/home.js"></script>
+  </body>
 </html>
