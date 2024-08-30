@@ -191,26 +191,3 @@ main {
     transition: transform 0.6s cubic-bezier(0.25, 0.8, 0.25, 1);
     margin-left: 0;
 }
-.content {
-    width: auto;
-    height: auto;
-}
-.graficos {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-items: center;
-    margin-bottom: 20px;
-}
-.card {
-    background-color: #f3e8ec;
-    padding: 20px;
-    border-radius: 10px;
-    width: 50%;
-    height: 50vh;
-    text-align: center;
-}
-canvas {
-    max-width: 100%; /* Faz com que o canvas não ultrapasse a largura do card */
-    height: auto; /* Mantém a altura proporcional */
-}
