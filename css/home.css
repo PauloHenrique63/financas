@@ -192,24 +192,64 @@ main {
     margin-left: 0;
 }
 .content {
+    display: flex; /* Usamos flexbox para colocar os elementos lado a lado */
     width: auto;
     height: auto;
+    justify-content: space-between; /* Espaça os itens para que fiquem ao longo da linha */
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column; /* Alinha os inputs verticalmente */
+    justify-content: center; /* Alinha verticalmente os inputs */
+    width: 30%; /* Ajuste a largura dos inputs conforme necessário */
+    padding: 20px; /* Adiciona algum padding */
+    background-color: #f3e8ec; /* Cor de fundo semelhante ao cartão */
+    border-radius: 10px; /* Adiciona bordas arredondadas */
+    
+}
+input[type="number"],
+input[type="text"]{
+        font-family:"Poppins";
+        border: 2px solid palevioletred ;
+        border-radius: 5px;
+        height: 50px;
+        padding: 10px;
+    }
+
+#addData{
+        border: 2px solid #d87093;
+        background-color: palevioletred;
+        color: #fff;
+        border-radius: 5px;
+        padding: 5px;
+        text-decoration: none;;
+        
+        height: 40px;
+        margin-top: 10px; /* Ajustado para mais espaço acima */
+        font-weight: 500;
+        font-size: medium;
+}
+#addData:hover {
+    background-color:#e792ae ;
+    color: white;
 }
 .graficos {
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-items: center;
-    margin-bottom: 20px;
+    flex: 1; /* Faz com que o contêiner do gráfico ocupe o espaço restante */
+    justify-content: center; /* Centraliza o gráfico horizontalmente */
+    align-items: center; /* Centraliza o gráfico verticalmente */
 }
+
 .card {
     background-color: #f3e8ec;
     padding: 20px;
     border-radius: 10px;
-    width: 50%;
+    width: 100%; /* Faz o cartão ocupar toda a largura disponível do contêiner */
     height: 50vh;
     text-align: center;
 }
+
 canvas {
     max-width: 100%; /* Faz com que o canvas não ultrapasse a largura do card */
     height: auto; /* Mantém a altura proporcional */
