@@ -1,16 +1,8 @@
 const tipos = [];
 const despesas = [];
 const colors = [
-    '#f58992', // Base
-    '#f5b4b9', // Claro 1
-    '#f7d3d6', // Claro 2
-    '#d75a6e', // Escura 1
-    '#b75a6e', // Escura 2
-    '#a4a4a4', // Neutra 1
-    '#c4c4c4', // Neutra 2
-    '#f57f82', // Vibrante 1
-    '#f5a3a6', // Vibrante 2
-    '#7fb5b3'  // Complementar
+    '#f58992', '#f5b4b9', '#f7d3d6', '#d75a6e', '#b75a6e',
+    '#a4a4a4', '#c4c4c4', '#f57f82', '#f5a3a6', '#7fb5b3'
 ];
 
 // Configuração inicial do gráfico
@@ -38,7 +30,10 @@ const barChart = new Chart(ctxBar, {
             },
             y: {
                 ticks: {
-                    color: 'black'
+                    color: 'black',
+                    callback: function (value) {
+                        return 'R$ ' + value; // Adiciona o símbolo de cifrão
+                    }
                 },
                 grid: {
                     display: false // Oculta as linhas de grade no eixo Y
@@ -51,9 +46,9 @@ const barChart = new Chart(ctxBar, {
         plugins: {
             title: {
                 display: true,
-                text: 'Análise de Orçamento!',
+                text: 'Principais gastos',
                 font: {
-                    size: 22
+                    size: 18
                 },
                 color: 'black'
             },
@@ -74,7 +69,7 @@ const barChart = new Chart(ctxBar, {
             tooltip: {
                 callbacks: {
                     label: function (tooltipItem) {
-                        return tooltipItem.label + ': ' + tooltipItem.raw + ' R$';
+                        return tooltipItem.label + ': R$ ' + tooltipItem.raw;
                     }
                 }
             }
@@ -84,28 +79,20 @@ const barChart = new Chart(ctxBar, {
 
 // Função para atualizar o gráfico
 function updateChart(tipo, despesa) {
-    // Verifica se o tipo já existe
     const index = tipos.indexOf(tipo);
     if (index !== -1) {
-        // Atualiza a despesa existente
         despesas[index] = despesa;
     } else {
-        // Adiciona novo tipo e despesa
         tipos.push(tipo);
         despesas.push(despesa);
     }
 
-    // Atualiza o gráfico
     barChart.data.labels = tipos;
     barChart.data.datasets[0].data = despesas;
-
-    // Aplica a paleta de cores para as colunas
     barChart.data.datasets[0].backgroundColor = colors.slice(0, tipos.length).concat(colors.slice(tipos.length));
-
     barChart.update();
 }
 
-// Adiciona evento ao botão
 document.getElementById('addData').addEventListener('click', () => {
     const tipo = document.getElementById('tipo').value;
     const despesa = parseFloat(document.getElementById('despesa').value);
