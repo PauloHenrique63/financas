@@ -9,7 +9,7 @@
 
 body {
     display: flex;
-    min-height: 100vh;
+    height: 100vh;
     background-color: #f3e8ec;
 }
 
@@ -203,13 +203,17 @@ main {
     margin-left: 0;
 }
 .content {
-    display: block; /* Usamos flexbox para colocar os elementos lado a lado */
+    display: flex; /* Usamos flexbox para colocar os elementos lado a lado */
     width: auto;
-    height: auto;
-    justify-content: space-between; /* Espaça os itens para que fiquem ao longo da linha */
+    max-height: 100vh;
+     /* Espaça os itens para que fiquem ao longo da linha */
 }
-
+.analise{
+    display: block;
+    width: auto;
+}
 .inputs {
+    margin-left: 110px;
     display: flex;
     flex-direction: row; /* Mantém os inputs lado a lado */
     gap: 20px; /* Espaçamento entre os inputs e o botão */
@@ -270,5 +274,52 @@ input[type="text"]{
 
 canvas {
     max-width: 100%; /* Faz com que o canvas não ultrapasse a largura do card */
-    height: auto; /* Mantém a altura proporcional */
+    height: 100%; /* Mantém a altura proporcional */
 }
+.painel {
+    border-radius: 15px;
+    width: 100%;
+    max-width: 800px; /* Limita a largura máxima do painel */
+    max-height: 90vh; /* Limita a altura máxima do painel a 90% da altura da tela */
+    background-color: #fff;
+    padding: 20px;
+    margin: 0 auto 0 20px; /* Centraliza o painel com margem à esquerda */
+    margin-right: 40px; /* Adiciona distância do lado direito */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow-y: auto; /* Adiciona rolagem vertical se o conteúdo exceder a altura */
+  }
+  
+  .painel h1 {
+    color: #ff5892;
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .info {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Exibe as informações em duas colunas */
+    gap: 15px;
+  }
+  
+  .info p {
+    background-color: #f3e8ec;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    font-size: 18px;
+    color: #333;
+    margin: 0;
+  }
+  
+  .info .maior-despesa,
+  .info .menor-despesa,
+  .info .total-despesas,
+  .info .total-transacoes,
+  .info .media-despesas {
+    font-size: 20px;
+    color: #ff5892;
+    font-weight: bold;
+  }
+  

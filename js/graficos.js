@@ -77,6 +77,24 @@ const barChart = new Chart(ctxBar, {
     }
 });
 
+// Função para calcular o maior, menor e total de despesas
+function calcularEstatisticas() {
+    if (despesas.length > 0) {
+        const maior = Math.max(...despesas);
+        const menor = Math.min(...despesas);
+        const total = despesas.reduce((acc, curr) => acc + curr, 0);
+        const indiceMaior = despesas.indexOf(maior);
+        const indiceMenor = despesas.indexOf(menor);
+
+        // Atualiza o painel com as informações
+        document.querySelector('.maior-despesa').textContent = `Maior despesa: R$ ${maior} (${tipos[indiceMaior]})`;
+        document.querySelector('.menor-despesa').textContent = `Menor despesa: R$ ${menor} (${tipos[indiceMenor]})`;
+        document.querySelector('.total-despesas').textContent = `Total de despesas: R$ ${total}`;
+        document.querySelector('.total-transacoes').textContent = `Total de transações: ${despesas.length}`;
+        document.querySelector('.media-despesas').textContent = `Média das despesas: R$ ${(total / despesas.length).toFixed(2)}`;
+    }
+}
+
 // Função para atualizar o gráfico
 function updateChart(tipo, despesa) {
     const index = tipos.indexOf(tipo);
@@ -91,8 +109,12 @@ function updateChart(tipo, despesa) {
     barChart.data.datasets[0].data = despesas;
     barChart.data.datasets[0].backgroundColor = colors.slice(0, tipos.length).concat(colors.slice(tipos.length));
     barChart.update();
+
+    // Calcula e exibe as estatísticas
+    calcularEstatisticas();
 }
 
+// Evento de adicionar dados
 document.getElementById('addData').addEventListener('click', () => {
     const tipo = document.getElementById('tipo').value;
     const despesa = parseFloat(document.getElementById('despesa').value);
@@ -105,3 +127,5 @@ document.getElementById('addData').addEventListener('click', () => {
         alert('Por favor, insira um tipo válido e um valor numérico.');
     }
 });
+
+
