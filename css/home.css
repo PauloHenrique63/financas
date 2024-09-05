@@ -161,12 +161,23 @@ main {
     justify-content: flex-start;
     gap: 14px;
 }
+#sidebar.open-sidebar ~ .pagina {
+    width: calc(100% - 240px); /* Ajusta o espaço restante quando o menu estiver aberto */
+}
+@media (max-width: 768px) {
+    .pagina {
+        width: 100%; /* Em telas menores, a página ocupará toda a largura */
+    }
 
-.pagina{
-    width: calc(100% - 82px);
-    height:  calc(100%-75px);
+    #sidebar.open-sidebar ~ .pagina {
+        width: calc(100% - 15%); /* Menos espaço ocupado em telas pequenas */
+    }
+}
+.pagina {
+    width: calc(100% - 82px); /* A página começa após o menu lateral */
+    height: calc(100% - 75px); /* Ajuste para não sobrepor o cabeçalho */
     padding-left: 20px;
-
+    transition: width .6s ease; /* Suaviza a transição de largura quando o menu expande */
 }
 .cabecalho{
     width: 100%;
@@ -192,7 +203,7 @@ main {
     margin-left: 0;
 }
 .content {
-    display: flex; /* Usamos flexbox para colocar os elementos lado a lado */
+    display: block; /* Usamos flexbox para colocar os elementos lado a lado */
     width: auto;
     height: auto;
     justify-content: space-between; /* Espaça os itens para que fiquem ao longo da linha */
@@ -200,14 +211,21 @@ main {
 
 .inputs {
     display: flex;
-    flex-direction: column; /* Alinha os inputs verticalmente */
-    justify-content: center; /* Alinha verticalmente os inputs */
-    width: 30%; /* Ajuste a largura dos inputs conforme necessário */
-    padding: 20px; /* Adiciona algum padding */
-    background-color: #f3e8ec; /* Cor de fundo semelhante ao cartão */
-    border-radius: 10px; /* Adiciona bordas arredondadas */
-    
+    flex-direction: row; /* Mantém os inputs lado a lado */
+    gap: 20px; /* Espaçamento entre os inputs e o botão */
+    justify-content: center; /* Centraliza o conteúdo da div */
+    align-items: center; /* Alinha verticalmente os elementos na mesma altura */
+    width: 50%; /* Ajuste a largura conforme necessário */
+    padding: 20px;
+    background-color: #f3e8ec;
+    border-radius: 10px;
 }
+.input-group {
+    display: flex;
+    flex-direction: column; /* Coloca o label acima do input */
+    width: 100%; /* Cada input ocupa o espaço disponível */
+}
+
 input[type="number"],
 input[type="text"]{
         font-family:"Poppins";
@@ -223,9 +241,9 @@ input[type="text"]{
         color: #fff;
         border-radius: 5px;
         padding: 5px;
-        text-decoration: none;;
-        
-        height: 40px;
+        text-decoration: none;
+        margin-top: 10px;
+        height: 40%;
         margin-top: 10px; /* Ajustado para mais espaço acima */
         font-weight: 500;
         font-size: medium;
@@ -246,7 +264,7 @@ input[type="text"]{
     padding: 20px;
     border-radius: 10px;
     width: 100%; /* Faz o cartão ocupar toda a largura disponível do contêiner */
-    height: 50vh;
+    height: 60vh;
     text-align: center;
 }
 
