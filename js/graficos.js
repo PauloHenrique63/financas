@@ -46,9 +46,9 @@ const barChart = new Chart(ctxBar, {
         plugins: {
             title: {
                 display: true,
-                text: 'Principais gastos',
+                text: 'Informe seus Gastos!',
                 font: {
-                    size: 18
+                    size: 22
                 },
                 color: 'black'
             },
@@ -77,7 +77,7 @@ const barChart = new Chart(ctxBar, {
     }
 });
 
-// Função para calcular o maior, menor e total de despesas
+// Função para calcular o maior, menor, total de despesas e porcentagens
 function calcularEstatisticas() {
     if (despesas.length > 0) {
         const maior = Math.max(...despesas);
@@ -92,6 +92,14 @@ function calcularEstatisticas() {
         document.querySelector('.total-despesas').textContent = `Total de despesas: R$ ${total}`;
         document.querySelector('.total-transacoes').textContent = `Total de transações: ${despesas.length}`;
         document.querySelector('.media-despesas').textContent = `Média das despesas: R$ ${(total / despesas.length).toFixed(2)}`;
+
+        // Calcula e exibe as porcentagens
+        let porcentagensHTML = 'Porcentagem de cada despesa em relação ao total: <br>';
+        despesas.forEach((despesa, index) => {
+            const porcentagem = ((despesa / total) * 100).toFixed(2);
+            porcentagensHTML += `${tipos[index]}: ${porcentagem}%<br>`;
+        });
+        document.querySelector('.porcentagens').innerHTML = porcentagensHTML;
     }
 }
 
@@ -127,5 +135,3 @@ document.getElementById('addData').addEventListener('click', () => {
         alert('Por favor, insira um tipo válido e um valor numérico.');
     }
 });
-
-
