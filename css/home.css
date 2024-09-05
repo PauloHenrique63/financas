@@ -279,9 +279,9 @@ canvas {
 }
 .painel {
     border-radius: 15px;
-    width: 100%;
+    width: 80vh;
     max-width: 800px; /* Limita a largura máxima do painel */
-    max-height: 90vh; /* Limita a altura máxima do painel a 90% da altura da tela */
+    max-height: 80vh; /* Limita a altura máxima do painel a 90% da altura da tela */
     background-color: #fff;
     padding: 20px;
     margin: 0 auto 0 20px; /* Centraliza o painel com margem à esquerda */
@@ -323,4 +323,13 @@ canvas {
     color: #ff5892;
     font-weight: bold;
   }
+  .info .media-despesas {
+    font-size: 20px;
+    color: #ff5892;
+    font-weight: bold;
+    text-align: center; /* Centraliza o texto */
+    grid-column: span 2; /* Faz o parágrafo ocupar as duas colunas */
+}
+
+
   
