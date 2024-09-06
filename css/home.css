@@ -241,21 +241,19 @@ input[type="text"]{
     }
 
 #addData{
-        border: 2px solid #d87093;
-        background-color: palevioletred;
-        color: #fff;
-        border-radius: 5px;
-        padding: 5px;
-        text-decoration: none;
-        margin-top: 10px;
-        height: 40%;
-        margin-top: 10px; /* Ajustado para mais espaço acima */
-        font-weight: 500;
-        font-size: medium;
+    background-color: palevioletred; /* Azul */
+    color: white; /* Texto branco */
+    font-weight: bold; /* Fonte em negrito */
+    padding: 0.5rem 1rem; /* Espaçamento interno */
+    border: 4px solid #e07297; /* Borda azul escura */
+    border-radius: 0.25rem; /* Bordas arredondadas */
+    cursor: pointer; /* Cursor de ponteiro ao passar o mouse */
+    transition: background-color 0.3s, border-color 0.3s;
+    margin-top: 25px; 
 }
 #addData:hover {
-    background-color:#e792ae ;
-    color: white;
+    background-color: rgb(232, 158, 182); /* Azul mais claro ao passar o mouse */
+    border-color: rgb(250, 152, 185);
 }
 .graficos {
     display: flex;
