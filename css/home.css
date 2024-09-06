@@ -213,7 +213,7 @@ main {
     width: auto;
 }
 .inputs {
-    margin-left: 110px;
+    margin-left: 155px;
     display: flex;
     flex-direction: row; /* Mantém os inputs lado a lado */
     gap: 20px; /* Espaçamento entre os inputs e o botão */

@@ -289,5 +289,6 @@ main {
   
   .btn:hover {
     border: #ff5892 2px solid;
-    background-color: #e792ae;
+    background-color: white;
+    color: #000;
   }
