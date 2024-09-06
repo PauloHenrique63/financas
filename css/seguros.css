@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+body {
+    display: flex;
+    height: 100vh;
+    background-color: #f3e8ec;
+}
+
+main {
+    padding: 20px;
+    position: fixed;
+    z-index: 1;
+    padding-left: calc(82px + 20px);
+}
+
+#sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #ffffff;
+    height: 100vh;
+    border-radius: 0px 18px 18px 0px;
+    position: relative;
+    transition: all .5s;
+    min-width: 82px;
+    z-index: 2;
+}
+
+#sidebar_content {
+    padding: 12px;
+}
+
+#user {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 24px;
+}
+
+#user_avatar {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+#user_infos {
+    display: flex;
+    flex-direction: column;
+}
+
+#user_infos span:last-child {
+    color: #6b6b6b;
+    font-size: 12px;
+}
+
+#side_items {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    list-style: none;
+}
+
+.side-item {
+    border-radius: 8px;
+    padding: 14px;
+    cursor: pointer;
+}
+
+
+
+.side-item:hover:not(.active),
+#logout_btn:hover {
+    background-color: #e3e9f7;
+}
+
+.side-item a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #0a0a0a;
+}
+
+
+
+.side-item a i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+}
+
+#logout {
+    border-top: 1px solid #e3e9f7;
+    padding: 12px;
+}
+
+#logout_btn {
+    border: none;
+    padding: 12px;
+    font-size: 14px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    border-radius: 8px;
+    text-align: start;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+#open_btn {
+    position: absolute;
+    top: 30px;
+    right: -10px;
+    background-color: #ff5892;
+    color: #e3e9f7;
+    border-radius: 100%;
+    width: 20px;
+    height: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+#open_btn_icon {
+    transition: transform .3s ease;
+}
+
+.open-sidebar #open_btn_icon {
+    transform: rotate(180deg);
+}
+
+.item-description {
+    width: 0px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 14px;
+    transition: width .6s;
+    height: 0px;
+}
+
+#sidebar.open-sidebar {
+    min-width: 15%;
+}
+
+#sidebar.open-sidebar .item-description {
+    width: 150px;
+    height: auto;
+}
+
+#sidebar.open-sidebar .side-item a {
+    justify-content: flex-start;
+    gap: 14px;
+}
+#sidebar.open-sidebar ~ .pagina {
+    width: calc(100% - 240px); /* Ajusta o espaço restante quando o menu estiver aberto */
+}
+.pagina {
+    width: calc(100% - 82px); /* A página começa após o menu lateral */
+    height: calc(100% - 75px); /* Ajuste para não sobrepor o cabeçalho */
+    padding-left: 20px;
+    transition: width .6s ease; /* Suaviza a transição de largura quando o menu expande */
+}
+.cabecalho{
+    width: 100%;
+    height: 75px;
+    padding: 10px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.cabecalho span{
+
+    color: #ff5892;
+}
+.cabecalho h1{
+    color:#000;
+}
+ .cabecalho h1.move-title {
+    transform: translateX(150px); /* Ajuste esse valor conforme necessário*/
+}
+
+.cabecalho h1 {
+    transition: transform 0.6s cubic-bezier(0.25, 0.8, 0.25, 1);
+    margin-left: 0;
+}
+.planos {
+    display: flex;
+    justify-content: center; /* Centraliza os cards horizontalmente */
+    align-items: center; /* Centraliza verticalmente, se necessário */
+    height: 100%; /* Garantindo que a altura da div 'planos' preencha o espaço disponível */
+    width: 100%; /* Ocupa toda a largura da div */
+    padding: 20px;
+}
+
+.card {
+    width: 300px;
+    
+    background-color: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 50px; /* Adiciona um espaço entre os cards */
+}
+
+  
+  .card-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #6b7280;
+    text-align: center;
+  }
+  
+  .card-price {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .dollar-sign {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  
+  .price {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-left: 5px;
+  }
+  
+  .period {
+    font-size: 1.25rem;
+    color: #6b7280;
+    margin-left: 5px;
+  }
+  
+  .features {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+  }
+  
+  .feature {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    color: #6b7280;
+  }
+  
+  .crossed-out {
+    
+    color: #6b7280;
+  }
+  
+  .icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+    color: #e792ae;
+  }
+  
+  .crossed-out-icon {
+    color: #e792ae;
+  }
+  
+  .btn {
+    background-color: #ff5892;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 1rem;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  .btn:hover {
+    border: #ff5892 2px solid;
+    background-color: #e792ae;
+  }

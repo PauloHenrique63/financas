@@ -279,15 +279,17 @@ canvas {
 }
 .painel {
     border-radius: 15px;
-    width: 80vh;
+    width: 100%;
     max-width: 800px; /* Limita a largura máxima do painel */
-    max-height: 80vh; /* Limita a altura máxima do painel a 90% da altura da tela */
+    max-height: 61vh; /* Limita a altura máxima do painel a 90% da altura da tela */
     background-color: #fff;
     padding: 20px;
     margin: 0 auto 0 20px; /* Centraliza o painel com margem à esquerda */
     margin-right: 40px; /* Adiciona distância do lado direito */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    overflow-y: auto; /* Adiciona rolagem vertical se o conteúdo exceder a altura */
+    overflow-y: auto;
+    justify-content: center;
+    align-items: center; /* Adiciona rolagem vertical se o conteúdo exceder a altura */
   }
   
   .painel h1 {
@@ -312,6 +314,7 @@ canvas {
     font-size: 18px;
     color: #333;
     margin: 0;
+    transition: all 0.3s ease;
   }
   
   .info .maior-despesa,
@@ -332,4 +335,75 @@ canvas {
 }
 
 
-  
+@media (max-width: 1024px) {
+    #sidebar {
+        width: 200px; /* Ajusta a largura da sidebar em telas menores */
+    }
+
+    #sidebar.open-sidebar {
+        width: 60px; /* Sidebar fechada */
+    }
+
+    .pagina {
+        margin-left: 200px; /* Ajusta o conteúdo quando a sidebar está aberta */
+    }
+
+    #sidebar.open-sidebar ~ .pagina {
+        margin-left: 60px; /* Ajusta o conteúdo quando a sidebar está fechada */
+    }
+}
+
+@media (max-width: 768px) {
+    #sidebar {
+        width: 150px; /* Ajusta a largura da sidebar em telas ainda menores */
+    }
+
+    #sidebar.open-sidebar {
+        width: 50px; /* Sidebar fechada */
+    }
+
+    .cabecalho h1 {
+        font-size: 18px; /* Reduz o tamanho do título */
+    }
+
+    .inputs {
+        flex-direction: column; /* Coloca os inputs em coluna */
+        width: 100%; /* Aumenta a largura */
+    }
+
+    .input-group {
+        width: 100%; /* Cada input ocupa 100% */
+    }
+
+    #addData {
+        width: 100%; /* O botão ocupa 100% */
+    }
+
+    .graficos {
+        flex-direction: column; /* Organiza os gráficos em coluna em telas menores */
+        align-items: stretch; /* Faz os gráficos ocuparem a largura total */
+    }
+
+    .card {
+        min-width: 90%; /* Faz o card ocupar 90% da largura em telas pequenas */
+        max-width: none; /* Remove a largura máxima */
+    }
+}
+
+@media (max-width: 480px) {
+    #sidebar {
+        width: 100px; /* Ajusta a largura da sidebar em telas menores ainda */
+    }
+
+    #sidebar.open-sidebar {
+        width: 50px; /* Sidebar fechada */
+    }
+
+    .cabecalho {
+        flex-direction: column; /* Alinha os elementos da cabeçalho em coluna */
+    }
+
+    .cabecalho h1 {
+        font-size: 16px; /* Reduz o tamanho do título */
+    }
+}

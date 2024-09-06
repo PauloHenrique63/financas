@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/seguros.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+
+    <title>home</title>
+  </head>
+
+  <body>
+    <nav id="sidebar">
+      <div id="sidebar_content">
+        <div id="user">
+          <img src="../img/avatar (2).jpg" id="user_avatar" alt="Avatar" />
+
+          <p id="user_infos">
+            <span class="item-description"> Rayssa </span>
+            <span class="item-description"> Advogada </span>
+          </p>
+        </div>
+
+        <ul id="side_items">
+          <li class="side-item">
+            <a href="./home.html">
+              <i class="fa-solid fa-chart-line"></i>
+              <span class="item-description"> Dashboard </span>
+            </a>
+          </li>
+
+          <li class="side-item">
+            <a href="./cursos.html">
+              <i class="fa-solid fa-book"></i>
+              <span class="item-description"> Cursos </span>
+            </a>
+          </li>
+
+          <li class="side-item">
+            <a href="#">
+              <i class="fa-solid fa-handshake"></i>
+              <span class="item-description"> Seguros </span>
+            </a>
+          </li>
+        </ul>
+
+        <button id="open_btn">
+          <i id="open_btn_icon" class="fa-solid fa-chevron-right"></i>
+        </button>
+      </div>
+
+      <div id="logout">
+        <button id="logout_btn">
+          <i
+            class="fa-solid fa-right-from-bracket fa-lg"
+            style="color: #ff5892"
+          ></i>
+          <span class="item-description"> Logout </span>
+        </button>
+      </div>
+    </nav>
+
+    <div class="pagina">
+      <div class="cabecalho">
+        <h1><span>Her</span>Finance</h1>
+      </div>
+      <div class="planos">
+        <div class="card">
+          <h5 class="card-title">Plano Básico</h5>
+          <div class="card-price">
+            <span class="dollar-sign">R$</span>
+            <span class="price">15</span>
+            <span class="period">/Mês</span>
+          </div>
+          <ul class="features">
+            <li class="feature">
+              <svg
+                class="icon"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"
+                />
+              </svg>
+              <span>Doenças Graves</span>
+            </li>
+            <li class="feature">
+              <svg
+                class="icon"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"
+                />
+              </svg>
+              <span>Invalidez</span>
+            </li>
+            <li class="feature crossed-out">
+              <svg
+                class="icon crossed-out-icon"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"
+                />
+              </svg>
+              <span>Doenças graves</span>
+            </li>
+            <li class="feature crossed-out">
+              <svg
+                class="icon crossed-out-icon"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"
+                />
+              </svg>
+              <span>Assintência funeral </span>
+            </li>
+          </ul>
+          <button class="btn">Escolher Plano</button>
+        </div>
+        <div class="card">
+          <h5 class="card-title">Plano Plus</h5>
+          <div class="card-price">
+            <span class="dollar-sign">R$</span>
+            <span class="price">16</span>
+            <span class="period">/Mês</span>
+          </div>
+          <ul class="features">
+            <li class="feature">
+              <svg
+                class="icon"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"
+                />
+              </svg>
+              <span>Desemprego involuntário</span>
+            </li>
+            <li class="feature">
+              <svg
+                class="icon"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"
+                />
+              </svg>
+              <span>Invalidez</span>
+            </li>
+            <li class="feature">
+              <svg
+                class="icon"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"
+                />
+              </svg>
+              <span>Doenças graves</span>
+            </li>
+            <li class="feature crossed-out">
+              <svg
+                class="icon crossed-out-icon"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"
+                />
+              </svg>
+              <span>Assistência funeral </span>
+            </li>
+            <li class="feature crossed-out">
+              <svg
+                class="icon crossed-out-icon"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"
+                />
+              </svg>
+              <span>Cesta básica</span>
+            </li>
+          </ul>
+          <button class="btn">Escolher Plano</button>
+        </div>
+        <div class="card">
+          <h5 class="card-title">Plano Premium</h5>
+          <div class="card-price">
+            <span class="dollar-sign">R$</span>
+            <span class="price">23</span>
+            <span class="period">/Mês</span>
+          </div>
+          <ul class="features">
+            <li class="feature">
+              <svg
+                class="icon"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"
+                />
+              </svg>
+              <span>Desemprego Voluntário</span>
+            </li>
+            <li class="feature">
+              <svg
+                class="icon"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"
+                />
+              </svg>
+              <span>Invalidez </span>
+            </li>
+            <li class="feature">
+              <svg
+                class="icon"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"
+                />
+              </svg>
+              <span>Doenças graves</span>
+            </li>
+            <li class="feature crossed-out">
+              <svg
+                class="icon crossed-out-icon"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"
+                />
+              </svg>
+              <span>Assistência funeral</span>
+            </li>
+            <li class="feature crossed-out">
+              <svg
+                class="icon crossed-out-icon"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"
+                />
+              </svg>
+              <span>Cesta básica</span>
+            </li>
+            <li class="feature crossed-out">
+              <svg
+                class="icon crossed-out-icon"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"
+                />
+              </svg>
+              <span>Palavra Médica</span>
+            </li>
+          </ul>
+          <button class="btn">Escolher Plano</button>
+        </div>
+      </div>
+    </div>
+    <script src="../js/seguros.js"></script>
+  </body>
+</html>
