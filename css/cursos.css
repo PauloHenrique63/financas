@@ -164,15 +164,7 @@ main {
 #sidebar.open-sidebar ~ .pagina {
     width: calc(100% - 240px); /* Ajusta o espaço restante quando o menu estiver aberto */
 }
-@media (max-width: 768px) {
-    .pagina {
-        width: 100%; /* Em telas menores, a página ocupará toda a largura */
-    }
 
-    #sidebar.open-sidebar ~ .pagina {
-        width: calc(100% - 15%); /* Menos espaço ocupado em telas pequenas */
-    }
-}
 .pagina {
     width: calc(100% - 82px); /* A página começa após o menu lateral */
     height: calc(100% - 75px); /* Ajuste para não sobrepor o cabeçalho */
@@ -208,200 +200,123 @@ main {
     max-height: 100vh;
      /* Espaça os itens para que fiquem ao longo da linha */
 }
-.analise{
-    display: block;
+
+.content {
+    display: flex; /* Usamos flexbox para colocar os elementos lado a lado */
     width: auto;
+    max-height: 100vh;
+    gap: 150px;
+    margin: 50px;
+     /* Espaça os itens para que fiquem ao longo da linha */
 }
-.inputs {
-    margin-left: 110px;
-    display: flex;
-    flex-direction: row; /* Mantém os inputs lado a lado */
-    gap: 20px; /* Espaçamento entre os inputs e o botão */
-    justify-content: center; /* Centraliza o conteúdo da div */
-    align-items: center; /* Alinha verticalmente os elementos na mesma altura */
-    width: 50%; /* Ajuste a largura conforme necessário */
-    padding: 20px;
-    background-color: #f3e8ec;
-    border-radius: 10px;
-
-}
-.input-group {
-    display: flex;
-    flex-direction: column; /* Coloca o label acima do input */
-    width: 100%; /* Cada input ocupa o espaço disponível */
-}
-
-input[type="number"],
-input[type="text"]{
-        font-family:"Poppins";
-        border: 2px solid palevioletred ;
-        border-radius: 5px;
-        height: 50px;
-        padding: 10px;
-    }
-
-#addData{
-        border: 2px solid #d87093;
-        background-color: palevioletred;
-        color: #fff;
-        border-radius: 5px;
-        padding: 5px;
-        text-decoration: none;
-        margin-top: 10px;
-        height: 40%;
-        margin-top: 10px; /* Ajustado para mais espaço acima */
-        font-weight: 500;
-        font-size: medium;
-}
-#addData:hover {
-    background-color:#e792ae ;
-    color: white;
-}
-.graficos {
-    display: flex;
-    flex: 1; /* Faz com que o contêiner do gráfico ocupe o espaço restante */
-    justify-content: center; /* Centraliza o gráfico horizontalmente */
-    align-items: center; /* Centraliza o gráfico verticalmente */
-}
-
+/* From Uiverse.io by akshat-patel28 */ 
 .card {
-    background-color: #f3e8ec;
-    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 230px;
+    height: 280px;
+    max-height: 330px;
+    background-color: var(--white);
     border-radius: 10px;
-    width: 100%; /* Faz o cartão ocupar toda a largura disponível do contêiner */
-    height: 60vh;
-    text-align: center;
-}
-
-canvas {
-    max-width: 100%; /* Faz com que o canvas não ultrapasse a largura do card */
-    height: 100%; /* Mantém a altura proporcional */
-}
-.painel {
-    border-radius: 15px;
+    box-shadow: 0px 10px 12px rgba(0, 0, 0, 0.08),
+            -4px -4px 12px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    transition: all 0.3s;
+    cursor: pointer;
+    box-sizing: border-box;
+    padding: 10px;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.1),
+            -4px -4px 12px rgba(0, 0, 0, 0.08);
+  }
+  
+  .card-image-container {
     width: 100%;
-    max-width: 800px; /* Limita a largura máxima do painel */
-    max-height: 80vh; /* Limita a altura máxima do painel a 90% da altura da tela */
-    background-color: #fff;
-    padding: 20px;
-    margin: 0 auto 0 20px; /* Centraliza o painel com margem à esquerda */
-    margin-right: 40px; /* Adiciona distância do lado direito */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    overflow-y: auto; /* Adiciona rolagem vertical se o conteúdo exceder a altura */
-  }
-  
-  .painel h1 {
-    color: #ff5892;
-    text-align: center;
-    font-size: 24px;
-    margin-bottom: 20px;
-  }
-  
-  .info {
-    display: grid;
-    grid-template-columns: 1fr 1fr; /* Exibe as informações em duas colunas */
-    gap: 15px;
-  }
-  
-  .info p {
-    background-color: #f3e8ec;
+    height: 64%;
     border-radius: 10px;
-    padding: 15px;
-    text-align: center;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-    font-size: 18px;
-    color: #333;
-    margin: 0;
-    transition: all 0.3s ease;
+    margin-bottom: 12px;
+    overflow: hidden;
+    background-color: rgb(165, 165, 165);
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   
-  .info .maior-despesa,
-  .info .menor-despesa,
-  .info .total-despesas,
-  .info .total-transacoes,
-  .info .media-despesas {
-    font-size: 20px;
-    color: #ff5892;
-    font-weight: bold;
+  .video-icon {
+    font-size: 40px;
   }
-  .info .media-despesas {
-    font-size: 20px;
-    color: #ff5892;
-    font-weight: bold;
-    text-align: center; /* Centraliza o texto */
-    grid-column: span 2; /* Faz o parágrafo ocupar as duas colunas */
-}
-
-
-@media (max-width: 1024px) {
-    #sidebar {
-        width: 200px; /* Ajusta a largura da sidebar em telas menores */
-    }
-
-    #sidebar.open-sidebar {
-        width: 60px; /* Sidebar fechada */
-    }
-
-    .pagina {
-        margin-left: 200px; /* Ajusta o conteúdo quando a sidebar está aberta */
-    }
-
-    #sidebar.open-sidebar ~ .pagina {
-        margin-left: 60px; /* Ajusta o conteúdo quando a sidebar está fechada */
-    }
-}
-
-@media (max-width: 768px) {
-    #sidebar {
-        width: 150px; /* Ajusta a largura da sidebar em telas ainda menores */
-    }
-
-    #sidebar.open-sidebar {
-        width: 50px; /* Sidebar fechada */
-    }
-
-    .cabecalho h1 {
-        font-size: 18px; /* Reduz o tamanho do título */
-    }
-
-    .inputs {
-        flex-direction: column; /* Coloca os inputs em coluna */
-        width: 100%; /* Aumenta a largura */
-    }
-
-    .input-group {
-        width: 100%; /* Cada input ocupa 100% */
-    }
-
-    #addData {
-        width: 100%; /* O botão ocupa 100% */
-    }
-
-    .graficos {
-        flex-direction: column; /* Organiza os gráficos em coluna em telas menores */
-        align-items: stretch; /* Faz os gráficos ocuparem a largura total */
-    }
-
-    .card {
-        min-width: 90%; /* Faz o card ocupar 90% da largura em telas pequenas */
-        max-width: none; /* Remove a largura máxima */
-    }
-}
-
-@media (max-width: 480px) {
-    #sidebar {
-        width: 100px; /* Ajusta a largura da sidebar em telas menores ainda */
-    }
-
-    #sidebar.open-sidebar {
-        width: 50px; /* Sidebar fechada */
-    }
-
-    .cabecalho {
-        flex-direction: column; /* Alinha os elementos da cabeçalho em coluna */
-    }
-
-    .cabecalho h1 {
-        font-size: 16px; /* Reduz o tamanho do título */
-    }
-}
+  
+  .card-title {
+    margin: 0;
+    font-size: 17px;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+            "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    color: palevioletred;
+    cursor: default;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    line-clamp: 1;
+  }
+  
+  .card-des {
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    line-clamp: 1;
+    margin: 0;
+    font-size: 13px;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+            "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    color: black;
+    cursor: default;
+  }
+  
+  .card-btn {
+    font-size: 15px;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+            "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ff5892;
+    width: 25px;
+    height: 25px;
+    max-height: 25px;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all ease-in-out 0.5s;
+    gap: 1px;
+    box-sizing: border-box;
+    padding-left: 5px;
+    margin-top: 8px;
+  }
+  
+  .card-btn:hover {
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.06);
+    width: 100%;
+    border-radius: 8px;
+    height: 30px;
+    gap: 10px;
+    padding: 0;
+  }
+  
+  .card-btn-text {
+    opacity: 0;
+    font-size: 1px;
+    font-weight: 500;
+    transition: all ease-in-out 0.5s;
+  }
+  
+  .card-btn:hover > .card-btn-text {
+    opacity: 1;
+    font-size: 15px;
+  }

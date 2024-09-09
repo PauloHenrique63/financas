@@ -164,15 +164,7 @@ main {
 #sidebar.open-sidebar ~ .pagina {
     width: calc(100% - 240px); /* Ajusta o espaço restante quando o menu estiver aberto */
 }
-@media (max-width: 768px) {
-    .pagina {
-        width: 100%; /* Em telas menores, a página ocupará toda a largura */
-    }
 
-    #sidebar.open-sidebar ~ .pagina {
-        width: calc(100% - 15%); /* Menos espaço ocupado em telas pequenas */
-    }
-}
 .pagina {
     width: calc(100% - 82px); /* A página começa após o menu lateral */
     height: calc(100% - 75px); /* Ajuste para não sobrepor o cabeçalho */
