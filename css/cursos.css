@@ -162,14 +162,16 @@ main {
     gap: 14px;
 }
 #sidebar.open-sidebar ~ .pagina {
-    width: calc(100% - 240px); /* Ajusta o espaço restante quando o menu estiver aberto */
+    margin-left: 240px; /* Ajusta a margem para que o conteúdo não fique atrás da sidebar */
+    transition: margin-left .6s ease; /* Ajusta o espaço restante quando o menu estiver aberto */
 }
 
 .pagina {
-    width: calc(100% - 82px); /* A página começa após o menu lateral */
-    height: calc(100% - 75px); /* Ajuste para não sobrepor o cabeçalho */
+    width: calc(100% - 82px); /* Ajusta a largura com base na sidebar */
+    height: calc(100vh - 75px); /* Ajuste para não sobrepor o cabeçalho */
     padding-left: 20px;
     transition: width .6s ease; /* Suaviza a transição de largura quando o menu expande */
+    margin-left: 82px; //* Suaviza a transição de largura quando o menu expande */
 }
 .cabecalho{
     position: fixed; /* Mantém o cabeçalho fixo no topo */
@@ -187,7 +189,7 @@ main {
 .cabecalho h1{
     color:#000;
 }
- .cabecalho h1.move-title {
+.cabecalho h1.move-title {
     transform: translateX(150px); /* Ajuste esse valor conforme necessário*/
 }
 
