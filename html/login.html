@@ -1,54 +1,69 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="../css/login.css" />
+    <script src="../js/login.js" defer></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Login</title>
-  <link rel="stylesheet" href="../css/login.css" />
-  <script src="../js/login.js" defer></script>
-</head>
-
-<body>
-  <header class="cabecalho">
-    <h1><span>Her</span>Finance</h1>
-    <nav class="navegacao">
-      <ul class="menu">
-        <li>
-          <a href="../index.html" class="link link-home">Home</a>
-        </li>
-        <li>
-          <a href="cadastrar.html" class="link link-cadastrar">Cadastre-se</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
-  <main class="pagina">
-    <div class="login">
-      <img src="../img/login.svg" alt="mulher" />
-    </div>
-    <div class="conteudo">
-      <div class="caixa">
-        <h1>Acesse a Plataforma</h1>
-        <div class="inputs">
-          <label for="email">Email :</label>
-          <input class="input" id="email" name="email" type="email" placeholder="Digite seu email..." minlength="4"
-            required />
-          <label for="senha">Senha :</label>
-          <input class="input" id="senha" name="senha" type="password" placeholder="Digite sua senha..." required />
-        </div>
-        <div class="suporte">
-          <input type="checkbox" id="lembrar-me" name="lembrar-me" />
-          <label for="lembrar-me">Lembrar-me</label>
-          <a href="https://support.google.com/accounts/answer/7682439?hl=pt-BR">Esqueci minha senha</a>
-        </div>
+  <body>
+    <header class="cabecalho">
+      <h1><span>Her</span>Finance</h1>
+      <nav class="navegacao">
+        <ul class="menu">
+          <li>
+            <a href="../index.html" class="link link-home">Home</a>
+          </li>
+          <li>
+            <a href="cadastrar.html" class="link link-cadastrar">Cadastre-se</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="pagina">
+      <div class="login">
+        <img src="../img/login.svg" alt="mulher" />
       </div>
-      <button id="acessar" class="acessar">Continuar</button>
-    </div>
-  </main>
-  <footer>
-    <p>&copy; Copyright 2024 HerFinance. Todos os direitos reservados.</p>
-  </footer>
-</body>
-
+      <div class="conteudo">
+        <div class="caixa">
+          <h1>Acesse a Plataforma</h1>
+          <div class="inputs">
+            <label for="email">Email :</label>
+            <input
+              class="input"
+              id="email"
+              name="email"
+              type="email"
+              placeholder="Digite seu email..."
+              minlength="4"
+              required
+            />
+            <label for="senha">Senha :</label>
+            <input
+              class="input"
+              id="senha"
+              name="senha"
+              type="password"
+              placeholder="Digite sua senha..."
+              required
+            />
+          </div>
+          <div class="suporte">
+            <input type="checkbox" id="lembrar-me" name="lembrar-me" />
+            <label for="lembrar-me">Lembrar-me</label>
+            <a
+              href="https://support.google.com/accounts/answer/7682439?hl=pt-BR"
+              >Esqueci minha senha</a
+            >
+          </div>
+        </div>
+        <button id="acessar" class="acessar">Continuar</button>
+      </div>
+    </main>
+    <footer>
+      <p>&copy; Copyright 2024 HerFinance. Todos os direitos reservados.</p>
+    </footer>
+  </body>
 </html>
