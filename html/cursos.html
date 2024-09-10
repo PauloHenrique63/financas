@@ -1,184 +1,390 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/cursos.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>home</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="../css/cursos.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <title>home</title>
-</head>
+  <body>
+    <nav id="sidebar">
+      <div id="sidebar_content">
+        <div id="user">
+          <img src="../img/avatar (2).jpg" id="user_avatar" alt="Avatar" />
 
-<body>
-  <nav id="sidebar">
-    <div id="sidebar_content">
-      <div id="user">
-        <img src="../img/avatar (2).jpg" id="user_avatar" alt="Avatar" />
+          <p id="user_infos">
+            <span class="item-description"> Rayssa </span>
+            <span class="item-description"> Advogada </span>
+          </p>
+        </div>
 
-        <p id="user_infos">
-          <span class="item-description"> Rayssa </span>
-          <span class="item-description"> Advogada </span>
-        </p>
+        <ul id="side_items">
+          <li class="side-item">
+            <a href="./html/home.html">
+              <i class="fa-solid fa-chart-line"></i>
+              <span class="item-description"> Dashboard </span>
+            </a>
+          </li>
+
+          <li class="side-item">
+            <a href="./cursos.html">
+              <i class="fa-solid fa-book"></i>
+              <span class="item-description"> Cursos </span>
+            </a>
+          </li>
+
+          <li class="side-item">
+            <a href="./seguros.html">
+              <i class="fa-solid fa-handshake"></i>
+              <span class="item-description"> Seguros </span>
+            </a>
+          </li>
+        </ul>
+
+        <button id="open_btn">
+          <i id="open_btn_icon" class="fa-solid fa-chevron-right"></i>
+        </button>
       </div>
 
-      <ul id="side_items">
-        <li class="side-item">
-          <a href="./html/home.html">
-            <i class="fa-solid fa-chart-line"></i>
-            <span class="item-description"> Dashboard </span>
-          </a>
-        </li>
+      <div id="logout">
+        <button id="logout_btn">
+          <i
+            class="fa-solid fa-right-from-bracket fa-lg"
+            style="color: #ff5892"
+          ></i>
+          <span class="item-description"> Logout </span>
+        </button>
+      </div>
+    </nav>
+    <div class="pagina">
+      <div class="cabecalho">
+        <h1><span>Her</span>Finance</h1>
+      </div>
+      <div class="content">
 
-        <li class="side-item">
-          <a href="./cursos.html">
-            <i class="fa-solid fa-book"></i>
-            <span class="item-description"> Cursos </span>
-          </a>
-        </li>
+        <div class="card">
+          <div class="card-image-container">
+            <img
+              src="../img/finan-1.jpg"
+              alt="Descrição da Imagem"
+              class="card-image"
+            />
+          </div>
 
-        <li class="side-item">
-          <a href="./seguros.html">
-            <i class="fa-solid fa-handshake"></i>
-            <span class="item-description"> Seguros </span>
-          </a>
-        </li>
-      </ul>
+          <p class="card-title">Card Title</p>
+          <p class="card-des">
+            Como planejar seu futuro financeiro de forma eficaz.
+          </p>
+          <a href="https://www.youtube.com/?app=desktop&hl=pt" target="_blank" style="text-decoration: none;">
+          <div class="card-btn">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="1em"
+              height="1em"
+              viewBox="0 0 384 512"
+              stroke-width="0"
+              fill="currentColor"
+              stroke="currentColor"
+            >
+              <path
+                d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"
+              ></path>
+            </svg>
+            <span class="card-btn-text">Assista o Video</span>
+          </div>
+        </a>
+        </div>
 
-      <button id="open_btn">
-        <i id="open_btn_icon" class="fa-solid fa-chevron-right"></i>
-      </button>
+        <div class="card">
+          <div class="card-image-container">
+            <img
+              src="../img/finac5.jfif"
+              alt="Descrição da Imagem"
+              class="card-image"
+            />
+              <path
+                d="M464 384.39a32 32 0 01-13-2.77 15.77 15.77 0 01-2.71-1.54l-82.71-58.22A32 32 0 01352 295.7v-79.4a32 32 0 0113.58-26.16l82.71-58.22a15.77 15.77 0 012.71-1.54 32 32 0 0145 29.24v192.76a32 32 0 01-32 32zM268 400H84a68.07 68.07 0 01-68-68V180a68.07 68.07 0 0168-68h184.48A67.6 67.6 0 01336 179.52V332a68.07 68.07 0 01-68 68z"
+              ></path>
+            </svg>
+          </div>
+          <p class="card-title">Introdução finaças</p>
+          <p class="card-des">
+            Organize seu orçamento e conquiste sua liberdade financeira.
+          </p>
+          <a href="https://www.youtube.com/?app=desktop&hl=pt" target="_blank" style="text-decoration: none;">
+          <div class="card-btn">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="1em"
+              height="1em"
+              viewBox="0 0 384 512"
+              stroke-width="0"
+              fill="currentColor"
+              stroke="currentColor"
+            >
+              <path
+                d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"
+              ></path>
+            </svg>
+            <span class="card-btn-text">Assista o video</span>
+          </div>
+        </a>
+        </div>
+
+        <div class="card">
+          <div class="card-image-container">
+            <img
+              src="../img/finac-2.jpg"
+              alt="Descrição da Imagem"
+              class="card-image"
+            />
+              <path
+                d="M464 384.39a32 32 0 01-13-2.77 15.77 15.77 0 01-2.71-1.54l-82.71-58.22A32 32 0 01352 295.7v-79.4a32 32 0 0113.58-26.16l82.71-58.22a15.77 15.77 0 012.71-1.54 32 32 0 0145 29.24v192.76a32 32 0 01-32 32zM268 400H84a68.07 68.07 0 01-68-68V180a68.07 68.07 0 0168-68h184.48A67.6 67.6 0 01336 179.52V332a68.07 68.07 0 01-68 68z"
+              ></path>
+            </svg>
+          </div>
+          <p class="card-title">Introdução finaças</p>
+          <p class="card-des">
+          Estratégias simples de poupança e investimento feminino.
+          </p>
+          <a href="https://www.youtube.com/?app=desktop&hl=pt" target="_blank" style="text-decoration: none">
+          <div class="card-btn">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="1em"
+              height="1em"
+              viewBox="0 0 384 512"
+              stroke-width="0"
+              fill="currentColor"
+              stroke="currentColor"
+            >
+              <path
+                d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"
+              ></path>
+            </svg>
+            <span class="card-btn-text">Assista o video</span>
+          </div>
+        </a>
+        </div>
+
+        <div class="card">
+          <div class="card-image-container">
+            <img
+            src="../img/finac6.jpg"
+            alt="Descrição da Imagem"
+            class="card-image"
+          />
+              <path
+                d="M464 384.39a32 32 0 01-13-2.77 15.77 15.77 0 01-2.71-1.54l-82.71-58.22A32 32 0 01352 295.7v-79.4a32 32 0 0113.58-26.16l82.71-58.22a15.77 15.77 0 012.71-1.54 32 32 0 0145 29.24v192.76a32 32 0 01-32 32zM268 400H84a68.07 68.07 0 01-68-68V180a68.07 68.07 0 0168-68h184.48A67.6 67.6 0 01336 179.52V332a68.07 68.07 0 01-68 68z"
+              ></path>
+            </svg>
+          </div>
+          <p class="card-title">Introdução finaças</p>
+          <p class="card-des">
+            Dicas práticas para mulheres alcançarem segurança financeira.
+          </p>
+          <a href="https://www.youtube.com/?app=desktop&hl=pt" target="_blank" style="text-decoration: none;">
+          <div class="card-btn">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="1em"
+              height="1em"
+              viewBox="0 0 384 512"
+              stroke-width="0"
+              fill="currentColor"
+              stroke="currentColor"
+            >
+              <path
+                d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"
+              ></path>
+            </svg>
+            <span class="card-btn-text">Assista o video</span>
+          </div>
+        </a>
+        </div>
+
+        <div class="card">
+          <div class="card-image-container">
+            <img
+              src="../img/finan-1.jpg"
+              alt="Descrição da Imagem"
+              class="card-image"
+            />
+          </div>
+
+          <p class="card-title">Card Title</p>
+          <p class="card-des">
+            Como planejar seu futuro financeiro de forma eficaz.
+          </p>
+          <a href="https://www.youtube.com/?app=desktop&hl=pt" target="_blank" style="text-decoration: none;">
+          <div class="card-btn">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="1em"
+              height="1em"
+              viewBox="0 0 384 512"
+              stroke-width="0"
+              fill="currentColor"
+              stroke="currentColor"
+            >
+              <path
+                d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"
+              ></path>
+            </svg>
+            <span class="card-btn-text">Assista o Video</span>
+          </div>
+        </a>
+        </div>
+        
+        <div class="card">
+          <div class="card-image-container">
+            <img
+              src="../img/finan-1.jpg"
+              alt="Descrição da Imagem"
+              class="card-image"
+            />
+          </div>
+
+          <p class="card-title">Card Title</p>
+          <p class="card-des">
+            Como planejar seu futuro financeiro de forma eficaz.
+          </p>
+          <a href="https://www.youtube.com/?app=desktop&hl=pt" target="_blank" style="text-decoration: none;">
+          <div class="card-btn">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="1em"
+              height="1em"
+              viewBox="0 0 384 512"
+              stroke-width="0"
+              fill="currentColor"
+              stroke="currentColor"
+            >
+              <path
+                d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"
+              ></path>
+            </svg>
+            <span class="card-btn-text">Assista o Video</span>
+          </div>
+        </a>
+        </div>
+
+
+        <div class="card">
+          <div class="card-image-container">
+            <img
+              src="../img/finan-1.jpg"
+              alt="Descrição da Imagem"
+              class="card-image"
+            />
+          </div>
+
+          <p class="card-title">Card Title</p>
+          <p class="card-des">
+            Como planejar seu futuro financeiro de forma eficaz.
+          </p>
+          <a href="https://www.youtube.com/?app=desktop&hl=pt" target="_blank" style="text-decoration: none;">
+          <div class="card-btn">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="1em"
+              height="1em"
+              viewBox="0 0 384 512"
+              stroke-width="0"
+              fill="currentColor"
+              stroke="currentColor"
+            >
+              <path
+                d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"
+              ></path>
+            </svg>
+            <span class="card-btn-text">Assista o Video</span>
+          </div>
+        </a>
+        </div>
+        
+        <div class="card">
+          <div class="card-image-container">
+            <img
+              src="../img/finan-1.jpg"
+              alt="Descrição da Imagem"
+              class="card-image"
+            />
+          </div>
+
+          <p class="card-title">Card Title</p>
+          <p class="card-des">
+            Como planejar seu futuro financeiro de forma eficaz.
+          </p>
+          <a href="https://www.youtube.com/?app=desktop&hl=pt" target="_blank" style="text-decoration: none;">
+          <div class="card-btn">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="1em"
+              height="1em"
+              viewBox="0 0 384 512"
+              stroke-width="0"
+              fill="currentColor"
+              stroke="currentColor"
+            >
+              <path
+                d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"
+              ></path>
+            </svg>
+            <span class="card-btn-text">Assista o Video</span>
+          </div>
+        </a>
+        </div>
+        
+        <div class="card">
+          <div class="card-image-container">
+            <img
+              src="../img/finan-1.jpg"
+              alt="Descrição da Imagem"
+              class="card-image"
+            />
+          </div>
+
+          <p class="card-title">Card Title</p>
+          <p class="card-des">
+            Como planejar seu futuro financeiro de forma eficaz.
+          </p>
+          <a href="https://www.youtube.com/?app=desktop&hl=pt" target="_blank" style="text-decoration: none;">
+          <div class="card-btn">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="1em"
+              height="1em"
+              viewBox="0 0 384 512"
+              stroke-width="0"
+              fill="currentColor"
+              stroke="currentColor"
+            >
+              <path
+                d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"
+              ></path>
+            </svg>
+            <span class="card-btn-text">Assista o Video</span>
+          </div>
+        </a>
+        </div>
+        
+
+        
+
+
+        
+
+
+      </div>
     </div>
 
-    <div id="logout">
-      <button id="logout_btn">
-        <i class="fa-solid fa-right-from-bracket fa-lg" style="color: #ff5892"></i>
-        <span class="item-description"> Logout </span>
-      </button>
-    </div>
-  </nav>
-  <div class="pagina">
-    <div class="cabecalho">
-      <h1><span>Her</span>Finance</h1>
-    </div>
-    <div class="content">
-
-
-      <div class="card">
-        <div class="card-image-container">
-          <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 512 512" stroke-width="0"
-            fill="currentColor" stroke="currentColor" class="video-icon">
-            <path
-              d="M464 384.39a32 32 0 01-13-2.77 15.77 15.77 0 01-2.71-1.54l-82.71-58.22A32 32 0 01352 295.7v-79.4a32 32 0 0113.58-26.16l82.71-58.22a15.77 15.77 0 012.71-1.54 32 32 0 0145 29.24v192.76a32 32 0 01-32 32zM268 400H84a68.07 68.07 0 01-68-68V180a68.07 68.07 0 0168-68h184.48A67.6 67.6 0 01336 179.52V332a68.07 68.07 0 01-68 68z">
-            </path>
-          </svg>
-        </div>
-        <p class="card-title">Card Title</p>
-        <p class="card-des">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam
-          inventore natus modi repellendus dolorem unde odio sequi! Porro, cum
-          maiores tempore suscipit laudantium perspiciatis, illo sunt,
-          reprehenderit quae est blanditiis.
-        </p>
-        <div class="card-btn">
-          <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 384 512" stroke-width="0"
-            fill="currentColor" stroke="currentColor">
-            <path
-              d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z">
-            </path>
-          </svg>
-          <span class="card-btn-text">Watch Video</span>
-        </div>
-      </div>
-
-
-      <div class="card">
-        <div class="card-image-container">
-          <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 512 512" stroke-width="0"
-            fill="currentColor" stroke="currentColor" class="video-icon">
-            <path
-              d="M464 384.39a32 32 0 01-13-2.77 15.77 15.77 0 01-2.71-1.54l-82.71-58.22A32 32 0 01352 295.7v-79.4a32 32 0 0113.58-26.16l82.71-58.22a15.77 15.77 0 012.71-1.54 32 32 0 0145 29.24v192.76a32 32 0 01-32 32zM268 400H84a68.07 68.07 0 01-68-68V180a68.07 68.07 0 0168-68h184.48A67.6 67.6 0 01336 179.52V332a68.07 68.07 0 01-68 68z">
-            </path>
-          </svg>
-        </div>
-        <p class="card-title">Introdução finaças</p>
-        <p class="card-des">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam
-          inventore natus modi repellendus dolorem unde odio sequi! Porro, cum
-          maiores tempore suscipit laudantium perspiciatis, illo sunt,
-          reprehenderit quae est blanditiis.
-        </p>
-        <div class="card-btn">
-          <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 384 512" stroke-width="0"
-            fill="currentColor" stroke="currentColor">
-            <path
-              d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z">
-            </path>
-          </svg>
-          <span class="card-btn-text">Assista o video</span>
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="card-image-container">
-          <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 512 512" stroke-width="0"
-            fill="currentColor" stroke="currentColor" class="video-icon">
-            <path
-              d="M464 384.39a32 32 0 01-13-2.77 15.77 15.77 0 01-2.71-1.54l-82.71-58.22A32 32 0 01352 295.7v-79.4a32 32 0 0113.58-26.16l82.71-58.22a15.77 15.77 0 012.71-1.54 32 32 0 0145 29.24v192.76a32 32 0 01-32 32zM268 400H84a68.07 68.07 0 01-68-68V180a68.07 68.07 0 0168-68h184.48A67.6 67.6 0 01336 179.52V332a68.07 68.07 0 01-68 68z">
-            </path>
-          </svg>
-        </div>
-        <p class="card-title">Introdução finaças</p>
-        <p class="card-des">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam
-          inventore natus modi repellendus dolorem unde odio sequi! Porro, cum
-          maiores tempore suscipit laudantium perspiciatis, illo sunt,
-          reprehenderit quae est blanditiis.
-        </p>
-        <div class="card-btn">
-          <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 384 512" stroke-width="0"
-            fill="currentColor" stroke="currentColor">
-            <path
-              d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z">
-            </path>
-          </svg>
-          <span class="card-btn-text">Assista o video</span>
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="card-image-container">
-          <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 512 512" stroke-width="0"
-            fill="currentColor" stroke="currentColor" class="video-icon">
-            <path
-              d="M464 384.39a32 32 0 01-13-2.77 15.77 15.77 0 01-2.71-1.54l-82.71-58.22A32 32 0 01352 295.7v-79.4a32 32 0 0113.58-26.16l82.71-58.22a15.77 15.77 0 012.71-1.54 32 32 0 0145 29.24v192.76a32 32 0 01-32 32zM268 400H84a68.07 68.07 0 01-68-68V180a68.07 68.07 0 0168-68h184.48A67.6 67.6 0 01336 179.52V332a68.07 68.07 0 01-68 68z">
-            </path>
-          </svg>
-        </div>
-        <p class="card-title">Introdução finaças</p>
-        <p class="card-des">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam
-          inventore natus modi repellendus dolorem unde odio sequi! Porro, cum
-          maiores tempore suscipit laudantium perspiciatis, illo sunt,
-          reprehenderit quae est blanditiis.
-        </p>
-        <div class="card-btn">
-          <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 384 512" stroke-width="0"
-            fill="currentColor" stroke="currentColor">
-            <path
-              d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z">
-            </path>
-          </svg>
-          <span class="card-btn-text">Assista o video</span>
-        </div>
-      </div>
-
-
-
-    </div>
-  </div>
-
-  <script src="../js/cursos.js"></script>
-</body>
-
+    <script src="../js/cursos.js"></script>
+  </body>
 </html>
