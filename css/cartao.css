@@ -299,7 +299,7 @@ main {
     position: absolute;
     background-color: rgb(255, 255, 255);
     width: 8em;
-    height: 0.8em;
+    height: 1.2em;
     top: 5em;
     left: .8em;
     border-radius: 2.5px;
@@ -309,10 +309,12 @@ main {
     position: absolute;
     background-color: rgb(255, 255, 255);
     width: 4.1em;
-    height: 0.8em;
+    height: 1.2em;
     top: 5em;
     left: 10em;
     border-radius: 2.5px;
+    justify-content: center;
+    align-items: center;
   }
   
   .code {
@@ -365,7 +367,61 @@ main {
     justify-content: center; /* Centraliza o cartão horizontalmente dentro da div cartao */
     align-items: center; /* Centraliza o cartão verticalmente */
     background-color: #f0f0f0; /* Cor de fundo apenas para visualização */
-    
+    border-radius: 15px;
     border: #000 2px solid;
-
+    padding: 20px;
+    margin: 0 auto 0 20px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
+
+
+
+
+  
+  .dados h1 {
+    color: #ff5892;
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .info {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Exibe as informações em duas colunas */
+    gap: 15px;
+  }
+  
+  .info p {
+    background-color: #f3e8ec;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    font-size: 18px;
+    color: #333;
+    margin: 0;
+    transition: all 0.3s ease;
+  }
+  
+  .info .nome,
+  .info .cpf,
+  .info .email,
+  .info .numero-cartao
+   {
+    font-size: 20px;
+    color: #ff5892;
+    font-weight: bold;
+  }
+  .info .seu-plano {
+    font-size: 20px;
+    color: #ff5892;
+    font-weight: bold;
+    text-align: center; /* Centraliza o texto */
+    grid-column: span 2; /* Faz o parágrafo ocupar as duas colunas */
+}
+
+
