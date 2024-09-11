@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cadratre-se</title>
+    <title>Cadastrar-se</title>
     <link rel="stylesheet" href="../css/cadastro.css" />
-    <script src="../js/cadastro.js" defer></script>
   </head>
+
   <body>
     <header class="cabecalho">
       <h1><span>Her</span>Finance</h1>
@@ -15,7 +15,9 @@
           <li>
             <a href="../index.html" class="link link-home">Home</a>
           </li>
-          <li><a href="sobre.html" class="link link-sobrenos">Sobre nós</a></li>
+          <li>
+            <a href="sobre.html" class="link link-sobrenos">Sobre nós</a>
+          </li>
         </ul>
       </nav>
     </header>
@@ -23,7 +25,7 @@
       <h1>Crie sua Conta!</h1>
       <div class="container">
         <div class="item item1">
-      <label for="nome">Nome Completo :</label>
+          <label for="nome">Nome Completo :</label>
           <input
             class="input"
             id="nome"
@@ -32,51 +34,57 @@
             placeholder="Digite seu nome..."
             minlength="3"
             required
-          /></div>
+          />
         </div>
-        <div class="item item2"><label for="cpf">CPF :</label>
-            <input
-              class="input"
-              id="cpf"
-              name="cpf"
-              type="text"
-              placeholder="Digite seu CPF..."
-              minlength="11"
-              maxlength="14"
-              required
-              pattern="\d{3}\.?\d{3}\.?\d{3}-?d{2}"
-            /></div>
-        <div class="item item3"> <label for="data-nasc">Data de Nascimento :</label>
-            <input
-              class="input"
-              id="data-nasc"
-              name="data-nasc"
-              type="date"
-              placeholder="selecione sua data de nascimento..."
-              required
-            /></div>
+        <div class="item item2">
+          <label for="cpf">CPF :</label>
+          <input
+            class="input"
+            id="cpf"
+            name="cpf"
+            type="text"
+            placeholder="Digite seu CPF..."
+            minlength="11"
+            maxlength="14"
+            required
+            pattern="\d{3}\.?\d{3}\.?\d{3}-?\d{2}"
+          />
+        </div>
+        <div class="item item3">
+          <label for="data-nasc">Data de Nascimento :</label>
+          <input
+            class="input"
+            id="data-nasc"
+            name="data-nasc"
+            type="date"
+            required
+          />
+        </div>
         <div class="item item4">
-            <label for="email">Email :</label>
-            <input
-              class="input"
-              id="email"
-              name="email"
-              type="email"
-              placeholder="Digite seu email..."
-              minlength="5"
-              required
-            />
+          <label for="email">Email :</label>
+          <input
+            class="input"
+            id="email"
+            name="email"
+            type="email"
+            placeholder="Digite seu email..."
+            minlength="5"
+            required
+          />
         </div>
-        <div class="item item5"> <label for="senha">Senha :</label>
-            <input
-              class="input"
-              id="senha"
-              name="senha"
-              type="password"
-              placeholder="Digite sua senha..."
-              required
-            /></div>
-        <div class="item item6"><label for="senha-dnv"> Confirme sua senha :</label>
+        <div class="item item5">
+          <label for="senha">Senha :</label>
+          <input
+            class="input"
+            id="senha"
+            name="senha"
+            type="password"
+            placeholder="Digite sua senha..."
+            required
+          />
+        </div>
+        <div class="item item6">
+          <label for="senha-dnv">Confirme sua senha :</label>
           <input
             class="input"
             id="senha-dnv"
@@ -84,16 +92,14 @@
             type="password"
             placeholder="Confirme sua senha..."
             required
-          /></div>
+          />
+        </div>
       </div>
-      <button id="acessar" class="acessar"  type="submit">Continuar</button>
-      </div>
-      
+      <button id="registrar" class="acessar" type="submit">Registrar</button>
     </main>
     <footer>
       <p>&copy; Copyright 2024 HerFinance. Todos os direitos reservados.</p>
     </footer>
-    
-    
+    <script src="../js/validacao.js"></script>
   </body>
 </html>

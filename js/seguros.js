@@ -7,3 +7,8 @@ document.getElementById('open_btn').addEventListener('click', function () {
 document.getElementById("logout_btn").onclick = function () {
     window.location.href = "/index.html";
 };
+
+function abrirCartao() {
+    window.location.href = "cartao.html";
+  }
+  
