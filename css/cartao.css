@@ -408,20 +408,14 @@ main {
   }
   
   .info .nome,
-  .info .cpf,
   .info .email,
-  .info .numero-cartao
+  .info .numero-cartao,
+  .info .seu-plano
    {
     font-size: 20px;
     color: #ff5892;
     font-weight: bold;
   }
-  .info .seu-plano {
-    font-size: 20px;
-    color: #ff5892;
-    font-weight: bold;
-    text-align: center; /* Centraliza o texto */
-    grid-column: span 2; /* Faz o parágrafo ocupar as duas colunas */
-}
+  
 
 
