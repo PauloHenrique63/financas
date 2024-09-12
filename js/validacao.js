@@ -10,9 +10,10 @@ document.addEventListener('DOMContentLoaded', function() {
             const dataNasc = document.getElementById('data-nasc').value;
             const emailCadastro = document.getElementById('email').value;
             const senhaCadastro = document.getElementById('senha').value;
+            const profissao = document.getElementById('profissao').value; // Obtém a profissão
   
             // Verifica se todos os campos estão preenchidos
-            if (!nome || !dataNasc || !emailCadastro || !senhaCadastro) {
+            if (!nome || !dataNasc || !emailCadastro || !senhaCadastro || !profissao) {
                 alert('Por favor, preencha todos os campos.');
                 return;
             }
@@ -34,12 +35,13 @@ document.addEventListener('DOMContentLoaded', function() {
             // Gera o número do cartão
             const numeroCartao = gerarNumeroCartao();
   
-            // Cria um objeto com os dados do usuário, incluindo o número do cartão
+            // Cria um objeto com os dados do usuário, incluindo o número do cartão e a profissão
             const usuario = {
                 nome: nome,
                 dataNasc: dataNasc,
                 email: emailCadastro,
                 senha: senhaCadastro,
+                profissao: profissao, // Adiciona a profissão ao objeto
                 numeroCartao: numeroCartao // Adiciona o número do cartão ao objeto
             };
   
@@ -47,7 +49,7 @@ document.addEventListener('DOMContentLoaded', function() {
             localStorage.setItem('usuario', JSON.stringify(usuario));
             
             // Redireciona o usuário para a página "cartao.html" após o registro
-            window.location.href = '../html/cartao.html';
+            window.location.href = '../html/home.html';
         });
     }
   
@@ -92,15 +94,38 @@ document.addEventListener('DOMContentLoaded', function() {
         const usuario = JSON.parse(localStorage.getItem('usuario'));
         
         if (usuario) {
-            document.querySelector('.nome').textContent = `Nome: ${usuario.nome}`;
-            document.querySelector('.email').textContent = `Email: ${usuario.email}`;
-            document.querySelector('.numero-cartao').textContent = `N.cartão: ${usuario.numeroCartao}`;
+            // Atualiza os campos da tabela de dados na cartao.html
+            const nomeElemento = document.querySelector('.nome');
+            const emailElemento = document.querySelector('.email');
+            const numeroCartaoElemento = document.querySelector('.numero-cartao');
+  
+            // Verifica se os elementos existem antes de tentar preencher
+            if (nomeElemento) nomeElemento.textContent = `Nome: ${usuario.nome}`;
+            if (emailElemento) emailElemento.textContent = `Email: ${usuario.email}`;
+            if (numeroCartaoElemento) numeroCartaoElemento.textContent = `N.cartão: ${usuario.numeroCartao}`;
         }
     }
 
     // Verifica se está na página cartao.html para carregar os dados
     if (window.location.pathname.includes('cartao.html')) {
         carregarDadosCartao();
+    }
+
+    // Função para exibir nome e profissão na sidebar (cartao.html)
+    function carregarDadosSidebar() {
+        const usuario = JSON.parse(localStorage.getItem('usuario'));
+        if (usuario) {
+            const nomeElemento = document.querySelector('.item-description.nome');
+            const profissaoElemento = document.querySelector('.item-description.profissao');
+
+            if (nomeElemento) nomeElemento.textContent = usuario.nome; // Exibe o nome
+            if (profissaoElemento) profissaoElemento.textContent = usuario.profissao; // Exibe a profissão
+        }
+    }
+
+    // Verifica se está em uma das páginas especificadas para carregar os dados na sidebar
+    if (['cartao.html', 'home.html', 'seguros.html', 'cursos.html'].some(page => window.location.pathname.includes(page))) {
+        carregarDadosSidebar();
     }
 });
 
