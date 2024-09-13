@@ -113,8 +113,13 @@ document.addEventListener('DOMContentLoaded', function () {
             const nomeElemento = document.querySelector('.item-description.nome');
             const profissaoElemento = document.querySelector('.item-description.profissao');
 
-            if (nomeElemento) nomeElemento.textContent = `Nome: ${usuario.nome}`; // Exibe o nome
-            if (profissaoElemento) profissaoElemento.textContent = `Profissão: ${usuario.profissao}`; // Exibe a profissão
+            if (nomeElemento) {
+                nomeElemento.textContent = `${usuario.nome}`; // Exibe o nome
+            }
+            if (profissaoElemento) {
+                profissaoElemento.textContent = `${usuario.profissao}`; // Exibe a profissão
+            }
+            // Exibe a profissão
         }
     }
 

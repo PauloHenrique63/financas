@@ -401,6 +401,7 @@ main {
     color: black;
     margin: 0;
     transition: all 0.3s ease;
+    font-weight: 600;
     
    
   }
