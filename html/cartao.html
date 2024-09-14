@@ -1,80 +1,102 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/cartao.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>Sua conta</title>
+  </head>
 
-  <link rel="stylesheet" href="../css/cartao.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <title>Sua conta</title>
-</head>
+  <body>
+    <nav id="sidebar">
+      <div id="sidebar_content">
+        <div id="user">
+          <img src="../img/avatar (2).jpg" id="user_avatar" alt="Avatar" />
+          <p id="user_infos">
+            <span class="item-description nome"></span>
+            <!-- Nome aqui -->
+            <span class="item-description profissao"></span>
+            <!-- Profissão aqui -->
+          </p>
+        </div>
 
-<body>
-  <nav id="sidebar">
-    <div id="sidebar_content">
-      <div id="user">
-        <img src="../img/avatar (2).jpg" id="user_avatar" alt="Avatar" />
-        <p id="user_infos">
-          <span class="item-description nome"></span>
-          <!-- Nome aqui -->
-          <span class="item-description profissao"></span>
-          <!-- Profissão aqui -->
-        </p>
+        <ul id="side_items">
+          <li class="side-item">
+            <a href="../html/home.html">
+              <i class="fa-solid fa-chart-line"></i>
+              <span class="item-description"> Dashboard </span>
+            </a>
+          </li>
+
+          <li class="side-item">
+            <a href="./cursos.html">
+              <i class="fa-solid fa-book"></i>
+              <span class="item-description"> Cursos </span>
+            </a>
+          </li>
+
+          <li class="side-item">
+            <a href="./seguros.html">
+              <i class="fa-solid fa-handshake"></i>
+              <span class="item-description"> Seguros </span>
+            </a>
+          </li>
+        </ul>
+
+        <button id="open_btn">
+          <i id="open_btn_icon" class="fa-solid fa-chevron-right"></i>
+        </button>
       </div>
 
-      <ul id="side_items">
-        <li class="side-item">
-          <a href="../html/home.html">
-            <i class="fa-solid fa-chart-line"></i>
-            <span class="item-description"> Dashboard </span>
-          </a>
-        </li>
+      <div id="logout">
+        <button id="logout_btn">
+          <i
+            class="fa-solid fa-right-from-bracket fa-lg"
+            style="color: #ff5892"
+          ></i>
+          <span class="item-description"> Logout </span>
+        </button>
+      </div>
+    </nav>
 
-        <li class="side-item">
-          <a href="./cursos.html">
-            <i class="fa-solid fa-book"></i>
-            <span class="item-description"> Cursos </span>
-          </a>
-        </li>
+    <div class="pagina">
+      <div class="cabecalho">
+        <h1><span>Her</span>Finance</h1>
+      </div>
+      <div class="geral">
+        <div class="content">
+          <div class="cartao">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <p class="heading_8264">HerFinance</p>
 
-        <li class="side-item">
-          <a href="./seguros.html">
-            <i class="fa-solid fa-handshake"></i>
-            <span class="item-description"> Seguros </span>
-          </a>
-        </li>
-      </ul>
-
-      <button id="open_btn">
-        <i id="open_btn_icon" class="fa-solid fa-chevron-right"></i>
-      </button>
-    </div>
-
-    <div id="logout">
-      <button id="logout_btn">
-        <i class="fa-solid fa-right-from-bracket fa-lg" style="color: #ff5892"></i>
-        <span class="item-description"> Logout </span>
-      </button>
-    </div>
-  </nav>
-
-  <div class="pagina">
-    <div class="cabecalho">
-      <h1><span>Her</span>Finance</h1>
-    </div>
-    <div class="content">
-      <div class="cartao">
-        <div class="flip-card">
-          <div class="flip-card-inner">
-            <div class="flip-card-front">
-              <p class="heading_8264">HerFinance</p>
-
-              <svg version="1.1" class="chip" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="30px" height="30px"
-                viewBox="0 0 50 50" xml:space="preserve">
-                <image id="image0" width="50" height="50" x="0" y="0" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAMAAAAp4XiDAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+                  <svg
+                    version="1.1"
+                    class="chip"
+                    id="Layer_1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    x="0px"
+                    y="0px"
+                    width="30px"
+                    height="30px"
+                    viewBox="0 0 50 50"
+                    xml:space="preserve"
+                  >
+                    <image
+                      id="image0"
+                      width="50"
+                      height="50"
+                      x="0"
+                      y="0"
+                      href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAMAAAAp4XiDAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
               AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAB6VBMVEUAAACNcTiVeUKVeUOY
               fEaafEeUeUSYfEWZfEaykleyklaXe0SWekSZZjOYfEWYe0WXfUWXe0WcgEicfkiXe0SVekSXekSW
               ekKYe0a9nF67m12ZfUWUeEaXfESVekOdgEmVeUWWekSniU+VeUKVeUOrjFKYfEWliE6WeESZe0GS
@@ -99,12 +121,29 @@
               S24ra7Tq1cbWjpXV3sHRCb1idXZ0sGdltXNxRateRwHRAACYHutzk/2I5QAAACV0RVh0ZGF0ZTpj
               cmVhdGUAMjAyMy0wMi0xM1QwODoxNToyOSswMDowMEUnN7UAAAAldEVYdGRhdGU6bW9kaWZ5ADIw
               MjMtMDItMTNUMDg6MTU6MjkrMDA6MDA0eo8JAAAAKHRFWHRkYXRlOnRpbWVzdGFtcAAyMDIzLTAy
-              LTEzVDA4OjE1OjI5KzAwOjAwY2+u1gAAAABJRU5ErkJggg=="></image>
-              </svg>
-              <svg version="1.1" class="contactless" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20px" height="20px"
-                viewBox="0 0 50 50" xml:space="preserve">
-                <image id="image0" width="50" height="50" x="0" y="0" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAQAAAC0NkA6AAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+              LTEzVDA4OjE1OjI5KzAwOjAwY2+u1gAAAABJRU5ErkJggg=="
+                    ></image>
+                  </svg>
+                  <svg
+                    version="1.1"
+                    class="contactless"
+                    id="Layer_1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    x="0px"
+                    y="0px"
+                    width="20px"
+                    height="20px"
+                    viewBox="0 0 50 50"
+                    xml:space="preserve"
+                  >
+                    <image
+                      id="image0"
+                      width="50"
+                      height="50"
+                      x="0"
+                      y="0"
+                      href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAQAAAC0NkA6AAAABGdBTUEAALGPC/xhBQAAACBjSFJN
               AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAJcEhZ
               cwAACxMAAAsTAQCanBgAAAAHdElNRQfnAg0IEzgIwaKTAAADDklEQVRYw+1XS0iUURQ+f5qPyjQf
               lGRFEEFK76koKGxRbWyVVLSOgsCgwjZBJJYuKogSIoOonUK4q3U0WVBWFPZYiIE6kuArG3VGzK/F
@@ -123,38 +162,64 @@
               xDyxm9MmISKCWrzB7bSlaqGlsf0FC0gMjzTg6GgAAAAldEVYdGRhdGU6Y3JlYXRlADIwMjMtMDIt
               MTNUMDg6MTk6NTYrMDA6MDCjlq7LAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDIzLTAyLTEzVDA4OjE5
               OjU2KzAwOjAw0ssWdwAAACh0RVh0ZGF0ZTp0aW1lc3RhbXAAMjAyMy0wMi0xM1QwODoxOTo1Nisw
-              MDowMIXeN6gAAAAASUVORK5CYII="></image>
-              </svg>
-              <p class="number">9759 2484 5269 6576</p>
-              <p class="valid_thru">VALIDADE</p>
-              <p class="date_8264">1 2 / 2 4</p>
-              <p class="name">RAYSSA LOPES</p>
-            </div>
-            <div class="flip-card-back">
-              <div class="strip"></div>
-              <div class="mstrip"></div>
-              <div class="sstrip">
-                <p class="code">123</p>
+              MDowMIXeN6gAAAAASUVORK5CYII="
+                    ></image>
+                  </svg>
+                  <p class="number">9759 2484 5269 6576</p>
+                  <p class="valid_thru">VALIDADE</p>
+                  <p class="date_8264">1 2 / 2 4</p>
+                  <p class="name">RAYSSA LOPES</p>
+                </div>
+                <div class="flip-card-back">
+                  <div class="strip"></div>
+                  <div class="mstrip"></div>
+                  <div class="sstrip">
+                    <p class="code">248</p>
+                  </div>
+                </div>
               </div>
+            </div>
+          </div>
+          <div class="dados">
+            <h1>Dados Usuario!</h1>
+            <div class="info">
+              <p class="nome">Nome:</p>
+              <p class="email">Email:</p>
+              <p class="numero-cartao"><span>N.cartão:</span></p>
+              <p class="seu-plano">Plano:</p>
             </div>
           </div>
         </div>
 
-      </div>
-      <div class="dados">
-        <h1>Seus Dados!</h1>
-        <div class="info">
-          <p class="nome">Nome:</p>
-          <p class="email">Email:</p>
-          <p class="numero-cartao">N.cartão:</p>
-          <p class="seu-plano">Plano:</p>
+        <div class="explicacao">
+          <h1>Plano Premium</h1>
+          <div class="roteiro">
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Exercitationem, hic nisi nemo, autem quis quas, excepturi
+              veritatis reiciendis suscipit ratione quidem officiis sapiente.
+              Consectetur culpa nostrum consequuntur impedit ducimus excepturi
+              rem ipsam. Accusantium corporis nesciunt, dolorum itaque velit
+              illum nobis aspernatur mollitia quis doloribus? Non adipisci
+              quidem fugiat, ducimus sapiente quia laudantium iusto consequatur
+              corrupti eligendi aperiam explicabo officiis! Vitae, qui? Neque
+              voluptatem eaque explicabo eos ex quos hic quod, obcaecati veniam
+              officia animi atque voluptate possimus cumque, ratione iusto in
+              provident expedita alias doloribus consequatur, ea at corporis
+              ipsum. Eaque repellendus reprehenderit fugiat modi laborum iusto
+              minima asperiores possimus doloribus quod soluta vitae temporibus
+              libero doloremque impedit officia veritatis incidunt, eum dolore.
+              Maiores dolorum sequi pariatur, est voluptates fuga minima iste et
+              perspiciatis nulla tenetur blanditiis quam voluptatum laboriosam
+              voluptatem magnam amet dolores? Nam nostrum commodi possimus
+              adipisci ad ullam ratione! Repellendus officia animi reiciendis
+              neque labore consectetur magni?
+            </p>
+          </div>
         </div>
       </div>
-
     </div>
-  </div>
-  <script src="../js/validacao.js"></script>
-  <script src="../js/home.js"></script>
-</body>
-
+    <script src="../js/validacao.js"></script>
+    <script src="../js/home.js"></script>
+  </body>
 </html>
