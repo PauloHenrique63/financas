@@ -198,7 +198,7 @@ main {
     display: flex; /* Usamos flexbox para colocar os elementos lado a lado */
     width: auto;
     max-height: 100vh;
-     /* Espaça os itens para que fiquem ao longo da linha */
+    
 }
 .analise{
     display: block;

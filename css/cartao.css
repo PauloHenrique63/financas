@@ -211,6 +211,7 @@ main {
      
   }
   
+  
   .cartao {
     width: auto;
     height: auto;
@@ -425,10 +426,10 @@ main {
   
 .explicacao{
   width: 50%;
-  
+  height: max-content;
   align-items: center;
   justify-content: center;
-   
+   border: #000 2px solid;
 }
 .explicacao h1{
   color: #ff5892;

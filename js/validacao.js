@@ -124,13 +124,18 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     // Verifica se está na página cartao.html para carregar os dados
-    if (window.location.pathname.includes('cartao.html')) {
-        carregarDadosCartao();
-        carregarDadosSidebar();
-    }
+    if (window.location.pathname.includes('cartao.html') ||
+    window.location.pathname.includes('plano1.html') ||
+    window.location.pathname.includes('plano2.html') ||
+    window.location.pathname.includes('plano3.html')) {
+        
+    carregarDadosCartao();
+    carregarDadosSidebar();
+}
+
 
     // Verifica se está em uma das páginas especificadas para carregar os dados na sidebar
-    if (['home.html', 'seguros.html', 'cursos.html'].some(page => window.location.pathname.includes(page))) {
+    if (['home.html', 'seguros.html', 'cursos.html' , 'plano1.html' , 'plano2.html', 'plano3.html'].some(page => window.location.pathname.includes(page))) {
         carregarDadosSidebar();
     }
 });
