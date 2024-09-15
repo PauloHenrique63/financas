@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', function () {
             localStorage.setItem('usuario', JSON.stringify(usuario));
 
             // Redireciona o usuário para a página "cartao.html" após o registro
-            window.location.href = '../html/cartao.html';
+            window.location.href = '../html/home.html';
         });
     }
 
