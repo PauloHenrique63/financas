@@ -218,7 +218,7 @@ main {
 .card {
     display: flex;
     flex-direction: column;
-    width: 230px;
+    width: 310px;
     height: 280px;
     max-height: 350px;
     background-color: white;
