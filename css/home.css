@@ -271,7 +271,7 @@ canvas {
     border-radius: 15px;
     width: 100%;
     max-width: 800px; /* Limita a largura máxima do painel */
-    max-height: 64vh; /* Limita a altura máxima do painel */
+    max-height: 70vh; /* Limita a altura máxima do painel */
     background-color: #fff;
     padding: 20px;
     margin: 0 auto 0 20px; /* Centraliza o painel com margem à esquerda */
@@ -292,7 +292,7 @@ canvas {
   .painel h1 {
     color: #ff5892;
     text-align: center;
-    font-size: 24px;
+    font-size: 33px;
     margin-bottom: 20px;
   }
   
