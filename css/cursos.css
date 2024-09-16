@@ -174,13 +174,12 @@ main {
     margin-left: 82px; //* Suaviza a transição de largura quando o menu expande */
 }
 .cabecalho{
-    position: fixed; /* Mantém o cabeçalho fixo no topo */
-    top: 0;
-    left: 82px; /* O cabeçalho começa após a largura da sidebar */
-    right: 0; /* Ajusta a largura do cabeçalho para preencher até a borda direita */
-    z-index: 1; /* Garante que o cabeçalho fique acima da sidebar */
-    background-color: #f3e8ec; /* Cor de fundo do cabeçalho */
-    padding: 20px; /* Ajuste conforme necessário */
+    width: 100%;
+    height: 75px;
+    padding: 10px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 .cabecalho span{
 
@@ -189,7 +188,7 @@ main {
 .cabecalho h1{
     color:#000;
 }
-.cabecalho h1.move-title {
+ .cabecalho h1.move-title {
     transform: translateX(150px); /* Ajuste esse valor conforme necessário*/
 }
 
@@ -197,12 +196,12 @@ main {
     transition: transform 0.6s cubic-bezier(0.25, 0.8, 0.25, 1);
     margin-left: 0;
 }
- /* Espaça os itens para que fiquem ao longo da linha */
+ 
 
 
 .content {
-    margin-left: 82px; /* O mesmo valor do margin-left do cabeçalho */
-    margin-top: 75px; /* Ajuste para não sobrepor o cabeçalho */
+    margin-left: 22px; /* O mesmo valor do margin-left do cabeçalho */
+    
     overflow-y: auto; /* Para permitir a rolagem quando necessário */
     height: calc(100vh - 75px); /* Ajuste conforme necessário para ocupar o restante da altura */
     padding: 20px; /* Adicione um padding se necessário */
