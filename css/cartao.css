@@ -207,8 +207,6 @@ main {
     height: max-content;
     align-items: center;
     justify-content: center;
-     border: #000 2px solid;
-     
   }
   
   
@@ -423,18 +421,74 @@ main {
         ;
         padding: 10px;
   }
-  
+  .planos{
+    width: 50%;
+    height: max-content;
+    
+    margin-right: 20px;
+  }
+
+
 .explicacao{
-  width: 50%;
+  width: 100%;
   height: max-content;
   align-items: center;
   justify-content: center;
-   border: #000 2px solid;
+ 
 }
 .explicacao h1{
-  color: #ff5892;
+   color: #ff5892;
     text-align: center;
-    font-size: 24px;
+    font-size: 34px;
     margin-bottom: 20px;
 }
+
+
+
+.header-cobertura{
+  display: flex;
+  height: 70px;
+  width: 100%;
+  justify-content: space-between;
+  padding-inline: 20px;
+  font-family: 'Poppins', sans-serif;
+  align-items: center; 
+  font-size: larger;
+  font-weight: bold;
+  background: linear-gradient(135deg, #ff5892 0%, #ff8aa9 50%, #ffbcd0 100%);
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.cobertura {
+  padding-inline: 20px;
+  font-family: 'Poppins', sans-serif;
+  
+  align-items: center; 
+  font-weight: bold;
+ 
+}
+
+.tudo{
+  display: flex;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  gap: 20px;
+  border-bottom: 1px dashed black;
+}
+.informacao{
+  height: 100%;
+  width: max-content;
+}
+
+.abertura {
+  height: 100%;
+  flex-grow: 1; /* Permite que a div ocupe o espaço restante */
+  display: flex; /* Ativa o Flexbox dentro da div abertura */
+  justify-content: flex-end; /* Alinha o ícone da seta para a direita */
+  align-items: center; /* Alinha verticalmente no centro */
+}
+
+
 
