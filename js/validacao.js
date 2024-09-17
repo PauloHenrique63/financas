@@ -140,6 +140,34 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 });
 
+function toggleContent(index) {
+    var campoTexto = document.getElementById("campo-texto-" + index);
+    
+    // Alterna entre adicionar ou remover a classe "show"
+    if (campoTexto.classList.contains("show")) {
+        campoTexto.classList.remove("show");
+    } else {
+        campoTexto.classList.add("show");
+    }
+}
+
+// Verifica se está na página plano2.html para adicionar o evento de clique nas setas
+if (window.location.pathname.includes('plano1.html') || 
+    window.location.pathname.includes('plano2.html') || 
+    window.location.pathname.includes('plano3.html')) {
+
+    var setas = document.querySelectorAll('.abertura i');
+
+    // Adiciona o evento de clique para cada seta
+    setas.forEach((seta, index) => {
+        seta.addEventListener('click', function() {
+            toggleContent(index + 1); // Chama a função com o número correspondente
+        });
+    });
+}
+
+
+
 
 
 

@@ -12,6 +12,9 @@ body {
     height: 100vh;
     background-color: #f3e8ec;
 }
+body::-webkit-scrollbar {
+  display: none; /* Esconde a barra de rolagem */
+}
 
 main {
     padding: 20px;
@@ -427,6 +430,7 @@ main {
     
     margin-right: 20px;
   }
+  
 
 
 .explicacao{
@@ -490,5 +494,20 @@ main {
   align-items: center; /* Alinha verticalmente no centro */
 }
 
+
+.campo-texto {
+  max-height: 0; /* Inicialmente oculto */
+  overflow: hidden; /* Esconde o conteúdo */
+  background-color: #f3e8ec; /* Pode ajustar a cor se quiser */
+  padding: 0 10px; /* Padding lateral, mas inicialmente sem padding superior/inferior */
+  margin-top: 10px;
+  transition: width .6s; /* Transição suave para altura e padding */
+  
+}
+
+.campo-texto.show {
+  max-height: 200px; /* Altura máxima quando exibido */
+  padding: 10px; /* Mostra o padding completo ao expandir */
+}
 
 
