@@ -510,4 +510,8 @@ main {
   padding: 10px; /* Mostra o padding completo ao expandir */
 }
 
+.rotate {
+  transition: transform 0.5s ease; /* Transição suave */
+  transform: rotate(180deg); /* Rotação em 180 graus */
+}
 
