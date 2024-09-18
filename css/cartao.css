@@ -492,6 +492,7 @@ main {
   display: flex; /* Ativa o Flexbox dentro da div abertura */
   justify-content: flex-end; /* Alinha o ícone da seta para a direita */
   align-items: center; /* Alinha verticalmente no centro */
+  cursor: pointer;
 }
 
 
@@ -515,3 +516,4 @@ main {
   transform: rotate(180deg); /* Rotação em 180 graus */
 }
 
+mm
