@@ -167,6 +167,11 @@ if (window.location.pathname.includes('plano1.html') ||
 }
 
 
+document.getElementById("apoliceButton").addEventListener("click", function() {
+    window.open("https://drive.google.com/file/d/12VLRMmRJc6vLDRzUF_GpigzYswGI5qgM/view?usp=drivesdk", "_blank");
+});
+
+
 
 
 
